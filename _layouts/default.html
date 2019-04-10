@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+
+    <link rel="stylesheet" href="{{ "assets/css/main.css" | prepend: site.baseurl }}">
+
+    <meta name="description" content="{% if content %} {{ content | strip_html | truncatewords:30 }} {% else %} Indie Web Developer {% endif %}" />
+    <link rel="shortcut icon" href="https://res.cloudinary.com/cinemakers/image/upload/f_auto/v1540439290/favicon.png" type="image/png" />
+    <link rel="canonical" href="https://www.ronaldlangeveld.com/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    
+    <meta property="og:site_name" content="Ronald Langeveld" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ronald Langeveld" />
+    <meta property="og:description" content="{% if content %} {{ content | strip_html | truncatewords:30 }} {% else %} Indie Web Developer {% endif %}" />
+    <meta property="og:url" content="https://www.ronaldlangeveld.com/" />
+    <meta property="og:image" content="{% if page.feature-img %}{{ page.feature-img }}{% else %}https://res.cloudinary.com/cinemakers/image/upload/f_auto/v1540219384/blog/IMG_4600-1.jpg{% endif %}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ronald Langeveld" />
+    <meta name="twitter:creator" content="@ronaldlangeveld">
+    <meta name="twitter:description" content="{% if content %} {{ content | strip_html | truncatewords:30 }} {% else %} Indie Web Developer {% endif %}" />
+    <meta name="twitter:url" content="https://www.ronaldlangeveld.com/" />
+    <meta name="twitter:image" content="{% if page.feature-img %}{{ page.feature-img }}{% else %}https://res.cloudinary.com/cinemakers/image/upload/f_auto/v1540219384/blog/IMG_4600-1.jpg{% endif %}" />
+    <meta property="og:image:width" content="2000" />
+    <meta property="og:image:height" content="1333" />
+    <meta name="google-site-verification" content="nT0OA4g9EIuHXru84WTYoOJ9yRNn6rE-Z9Hm-MCqFFg" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111873806-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111873806-1');
+</script>
+
+
+</head>
+<body>
+    <div>
+</div>
+<div>
+    {{ content }}
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="{{ "assets/js/main.js" | prepend: site.baseurl }}"></script>
+
+</body>
+</html>
