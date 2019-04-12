@@ -4,6 +4,11 @@ body {
 }
 
 
+.notification {
+  border-radius: 0px !important;
+
+}
+
 header.masthead {
     background: no-repeat center center;
     background-color: #868e96;
