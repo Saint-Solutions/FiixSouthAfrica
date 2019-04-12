@@ -4,10 +4,83 @@ body {
 }
 
 
+/* tricky section full of css and javascript */
+.features_hover_content_image {
+  display: inline-block;
+  width: 56%;
+  text-align: left;
+  background-image: url('../images/features_hover_chooser_2.png');
+  background-repeat: no-repeat;
+  background-position: 120px top;
+  background-size: auto 100%;
+  float: right;
+  min-height: 700px;
+}
+.features_hover_content_container {
+  width: 40%;
+  display: inline-block;
+  text-align: left;
+  margin-right: 3%;
+}
+
+.features_hover_content_triggers img {
+  height: 90px;
+  width: 100px;
+  padding: 10px;
+  border-radius: 50%;
+  animation: 2.2s ease-in-out infinite;
+  animation-delay: .578s;
+  animation-name: pulse-line;
+}
+.features_hover_content_triggers {
+  display: inline-block;
+  width: 90px;
+}
+
+.features_hover_content_triggers img:hover {
+  background-color: #ececec;
+}
+
 .notification {
   border-radius: 0px !important;
 
 }
+
+.features_hover_content_container > div {
+  height: 100px;
+  background: url('../images/double_arrows_left.png') no-repeat right 51px;
+  padding-right: 80px;
+}
+
+
+.feature_hover_content_1 {
+  margin-left: 1em;
+}
+
+.feature_hover_content_2 {
+  top: 100px;
+  position: relative;
+  margin-left: 1em;
+}
+
+.feature_hover_content_3 {
+  top: 220px;
+  position: relative;
+  margin-left: 1em;
+}
+
+.feature_hover_content_4 {
+  top: 330px;
+  position: relative;
+  margin-left: 1em;
+}
+
+.feature_hover_content_5 {
+  top: 440px;
+  position: relative;
+  margin-left: 1em;
+}
+
 
 header.masthead {
     background: no-repeat center center;
