@@ -3,11 +3,19 @@ body {
   
 }
 
+.features_hover_row .wpb_raw_html {
+  max-width: 1600px;
+  width: 90%;
+  position: relative;
+  margin-right: 0;
+  margin-left: auto;
+  right: 0;
+}
 
 /* tricky section full of css and javascript */
 .features_hover_content_image {
   display: inline-block;
-  width: 56%;
+  width: 100%;
   text-align: left;
   background-image: url('../images/features_hover_chooser_2.png');
   background-repeat: no-repeat;
@@ -17,7 +25,7 @@ body {
   min-height: 700px;
 }
 .features_hover_content_container {
-  width: 40%;
+  width: 100%;
   display: inline-block;
   text-align: left;
   margin-right: 3%;
@@ -64,21 +72,29 @@ body {
 }
 
 .feature_hover_content_3 {
-  top: 220px;
+  top: 200px;
   position: relative;
   margin-left: 1em;
 }
 
 .feature_hover_content_4 {
-  top: 330px;
+  top: 320px;
   position: relative;
   margin-left: 1em;
 }
 
 .feature_hover_content_5 {
-  top: 440px;
+  top: 420px;
   position: relative;
   margin-left: 1em;
+}
+
+
+
+.wpb_text_column {
+  background-image: url('../images/hex_pattern.png');
+  padding: 100px 10% 120px;
+  margin-bottom: 0!important;
 }
 
 
