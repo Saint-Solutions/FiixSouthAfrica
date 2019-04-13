@@ -8,59 +8,7 @@ layout: default
 <!-- href="{{ "assets/css/main.css" | prepend: site.baseurl }}"> -->
 <section style="background-image: url({{ 'assets/images/updated_background.jpg' | prepend: site.baseurl }})"
     class="hero is-info ">
-    <nav class="navbar is-info container " role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item is-hidden-mobile" href="/">
-                <img src="{{ 'assets/images/fiix_logo_white_retina.png' | prepend: site.baseurl }}" height="28" />
-            </a>
-
-            <a role="button" class="navbar-burger burger has-text-white" aria-label="menu" aria-expanded="false"
-                data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-
-        <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-
-
-            </div>
-
-            <div style="margin-right: 5em;" class="navbar-end">
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link is-size-5 has-text-white">
-                        Products
-                    </a>
-
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item has-text-black">
-                            CMMS
-                        </a>
-                        <a class="navbar-item has-text-black">
-                            Features
-                        </a>
-                    </div>
-                </div>
-
-                <a class="navbar-item is-size-5 has-text-white">
-                    Pricing
-                </a>
-                <a class="navbar-item is-size-5 has-text-white">
-                    Solutions
-                </a>
-                <a class="navbar-item is-size-5 has-text-white">
-                    Resources
-                </a>
-                <a class="navbar-item is-size-5 has-text-white">
-                    Company
-                </a> <a class="navbar-item is-size-5 has-text-white">
-                    Login
-                </a>
-            </div>
-        </div>
-    </nav>
+    {% include navbar.html %}
 
     <div class="hero-body">
         <div class="container">

@@ -9,59 +9,7 @@ layout: default
 <section
     style="background: url({{ 'assets/images/bottom-right-logo.png' | prepend: site.baseurl }}) no-repeat bottom right,linear-gradient(to right, #14499a 0%, #0097dc 100%);"
     class="hero is-link is-bold is-medium">
-    <nav class="navbar is-info container " role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item is-hidden-mobile" href="/">
-                <img src="{{ 'assets/images/fiix_logo_white_retina.png' | prepend: site.baseurl }}" height="28" />
-            </a>
-
-            <a role="button" class="navbar-burger burger has-text-white" aria-label="menu" aria-expanded="false"
-                data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-
-        <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-
-
-            </div>
-
-            <div style="margin-right: 5em;" class="navbar-end">
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link is-size-5 has-text-white">
-                        Products
-                    </a>
-
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item has-text-black">
-                            CMMS
-                        </a>
-                        <a class="navbar-item has-text-black">
-                            Features
-                        </a>
-                    </div>
-                </div>
-
-                <a class="navbar-item is-size-5 has-text-white">
-                    Pricing
-                </a>
-                <a class="navbar-item is-size-5 has-text-white">
-                    Solutions
-                </a>
-                <a class="navbar-item is-size-5 has-text-white">
-                    Resources
-                </a>
-                <a class="navbar-item is-size-5 has-text-white">
-                    Company
-                </a> <a class="navbar-item is-size-5 has-text-white">
-                    Login
-                </a>
-            </div>
-        </div>
-    </nav>
+    {% include navbar.html %}
 
     <div class="hero-body">
         <div class="container">
@@ -438,14 +386,20 @@ layout: default
                         <hr>
 
                         <h2>Further reading:</h2>
-                        <p>If you are interested in learning more about CMMS software, have a look at these other resources:</p>
+                        <p>If you are interested in learning more about CMMS software, have a look at these other
+                            resources:</p>
                         <ul class=" list-circle color1">
-                                <li><a href="/cmms-implementation-guide/">Our free guide to CMMS implementation</a></li>
-                                <li><a href="http://en.wikipedia.org/wiki/Computerized_maintenance_management_system" target="_blank" rel="nofollow">The CMMS Wikipedia page</a></li>
-                                <li><a href="http://www.plant-maintenance.com/articles/CMMS_systems.shtml" target="_blank" rel="nofollow">A very comprehensive review of CMMS features</a><span>&nbsp;</span>by Bryan Weir</li>
-                                <li><a href="http://reliabilityweb.com/articles/entry/CMMS_Best_Practices_Study_A_Perspective" target="_blank" rel="nofollow">CMMS best practices study by Reliabilityweb</a></li>
-                                <li><a href="/maintenance-strategies/preventative-maintenance/">Preventive maintenance software</a></li>
-                                </ul>
+                            <li><a href="/cmms-implementation-guide/">Our free guide to CMMS implementation</a></li>
+                            <li><a href="http://en.wikipedia.org/wiki/Computerized_maintenance_management_system"
+                                    target="_blank" rel="nofollow">The CMMS Wikipedia page</a></li>
+                            <li><a href="http://www.plant-maintenance.com/articles/CMMS_systems.shtml" target="_blank"
+                                    rel="nofollow">A very comprehensive review of CMMS features</a><span>&nbsp;</span>by
+                                Bryan Weir</li>
+                            <li><a href="http://reliabilityweb.com/articles/entry/CMMS_Best_Practices_Study_A_Perspective"
+                                    target="_blank" rel="nofollow">CMMS best practices study by Reliabilityweb</a></li>
+                            <li><a href="/maintenance-strategies/preventative-maintenance/">Preventive maintenance
+                                    software</a></li>
+                        </ul>
 
 
                     </div>
@@ -461,34 +415,35 @@ layout: default
 
 
 <section class="hero is-info is-bold is-medium">
-        <div class="hero-body">
-          <div class="container">
+    <div class="hero-body">
+        <div class="container">
             <h1 class="title has-text-centered">
-                    Empower your maintenance team
+                Empower your maintenance team
             </h1>
             <h2 class="subtitle has-text-centered">
-                    Leverage the cloud to work together, better in the new connected age of <br> maintenance and asset management.
+                Leverage the cloud to work together, better in the new connected age of <br> maintenance and asset
+                management.
             </h2>
-<br>
+            <br>
             <div class="columns is-centered">
 
                 <div class="column is-4">
 
-                        <div class="has-text-centered">
-                                <a class="button is-success is-size-4 is-fullwidth" href="">Get started with a free tour</a>
+                    <div class="has-text-centered">
+                        <a class="button is-success is-size-4 is-fullwidth" href="">Get started with a free tour</a>
 
-                            </div>
+                    </div>
 
                 </div>
 
                 <div class="column is-4 has-text-centered">
-                        <a class="button is-light is-size-4 is-fullwidth" href="">Compare pricing plans</a>
+                    <a class="button is-light is-size-4 is-fullwidth" href="">Compare pricing plans</a>
                 </div>
 
             </div>
-          </div>
         </div>
-      </section>
+    </div>
+</section>
 
 
-      {% include footer.html %}
+{% include footer.html %}
