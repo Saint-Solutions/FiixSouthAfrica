@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+
+
+<p>WORK IN PROGRESS, NOT OPTIMIZED - NOT FOR PRODUCTION USE</p>
+<!-- href="{{ "assets/css/main.css" | prepend: site.baseurl }}"> -->
+<section class="hero is-fullheight is-link is-bold">
+    {% include navbar.html %}
+
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-7">
+                    <br>
+                    <br>
+                    <h1 class="title is-1 is-size-3-mobile has-text-centered">
+                            Maintenance without limitations
+                    </h1>
+                    <h2 class="subtitle is-2 has-text-centered">The new Fiix CMMS mobile app works anywhere you do</h2>
+                    <div class="has-text-centered">
+                        <a class="button is-size-4 is-size-7-mobile is-white is-outlined" href="">
+                            Book a demo</a>
+                    </div>
+                </div>
+                <div class="column is-2 has-text-centered is-hidden-mobile">
+                        <img class="lazyload mainImg"
+                        data-src="{{ 'assets/images/android-header.png' | prepend: site.baseurl }}" />
+                    <img class="lazyload mainImg"
+                        data-src="{{ 'assets/images/iphone-header.png' | prepend: site.baseurl }}" />
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
