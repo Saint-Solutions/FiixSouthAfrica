@@ -14,7 +14,7 @@ $(document).ready(function(){
       slidesToShow: 1,
     });
 
-    var animationTime 	= 2000;
+var animationTime 	= 2000;
 var interval 		= null;
 var featureItems 	= 5;
 var featureCount 	= 1;
@@ -59,6 +59,7 @@ $(".features_hover_content_triggers img").mouseenter(function(e){
 }).mouseleave(function(e){
 	
 	var hovered_feature = $(this).attr("class");
+	// console.log(hovered_feature);
 	
 	hovered_feature = hovered_feature.slice(-1);
 	
