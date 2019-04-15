@@ -15,18 +15,20 @@ layout: default
             <div class="columns is-gapless">
 
                 <div class="column is-6 has-text-centered">
-                    <img class="mainImg"
-                        src="{{ 'assets/images/landing-dashboard-screen.png' | prepend: site.baseurl }}" />
+                        <img class="mainImg lazyload is-hidden-desktop"
+                        data-src="{{ 'assets/images/fiix_logo_white_retina.png' | prepend: site.baseurl }}" />
+                    <img class="mainImg lazyload is-hidden-mobile"
+                        data-src="{{ 'assets/images/landing-dashboard-screen.png' | prepend: site.baseurl }}" />
                 </div>
 
                 <div class="column is-6">
-                    <h1 class="title is-1 has-text-centered">Join the maintenance intelligence revolution</h1>
+                    <h1 class="title is-1 has-text-centered is-size-3-mobile">Join the maintenance intelligence revolution</h1>
                     <h2 class="subtitle is-4 has-text-centered">Let the Fiix dashboard do the work for you. Make better
                         decisions, faster with turbo-charged visualized maintenance data and analytics at your
                         fingertips</h2>
 
                     <div class="has-text-centered">
-                        <a class="button is-success is-size-4">Get started with a free tour</a </div> </div> </div>
+                        <a class="button is-success is-size-4 is-size-6-mobile">Get started with a free tour</a </div> </div> </div>
                             </div> </div> </section> <section class="hero is-medium">
                         <div class="hero-body">
                             <div class="container">
@@ -45,7 +47,7 @@ layout: default
 
 
                                         <div class="has-text-centered">
-                                            <a class="button is-size-4 is-link is-outlined has-text-centered">
+                                            <a class="button is-size-4 is-size-6-mobile is-link is-outlined has-text-centered">
                                                 Get started today for just $40
                                             </a>
                                         </div>
@@ -57,7 +59,7 @@ layout: default
 </section>
 
 
-<section>
+<section class="is-hidden-mobile">
     <div class="container-fluid">
         <div class="columns is-gapless">
             <div class="column is-4">
@@ -67,7 +69,7 @@ layout: default
                     <div class="content">
                         <div class="columns">
                             <div class="column is-4">
-                                <span><img src="{{ 'assets/images/lightning-fast-w.png' | prepend: site.baseurl }}"
+                                <span><img class="lazyload" data-src="{{ 'assets/images/lightning-fast-w.png' | prepend: site.baseurl }}"
                                         alt=""></span>
 
                             </div>
@@ -92,7 +94,7 @@ layout: default
                     <div class="content">
                         <div class="columns">
                             <div class="column is-4">
-                                <span><img src="{{ 'assets/images/skyrocket-w.png' | prepend: site.baseurl }}"
+                                <span><img class="lazyload" data-src="{{ 'assets/images/skyrocket-w.png' | prepend: site.baseurl }}"
                                         alt=""></span>
 
                             </div>
@@ -119,7 +121,7 @@ layout: default
                     <div class="content">
                         <div class="columns">
                             <div class="column is-4">
-                                <span><img src="{{ 'assets/images/building-w.png' | prepend: site.baseurl }}"
+                                <span><img class="lazyload" data-src="{{ 'assets/images/building-w.png' | prepend: site.baseurl }}"
                                         alt=""></span>
 
                             </div>
@@ -151,7 +153,7 @@ layout: default
                         <h2 class="subtitle is-2 has-text-centered">Discover Fiix</h2>
                         <br>
                     </div>
-                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/s5W8Oxdli10" frameborder="0"
+                    <iframe class="lazyload" width="100%" height="500" data-src="https://www.youtube.com/embed/s5W8Oxdli10" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
@@ -178,7 +180,7 @@ layout: default
 
                         <div class="has-text-centered">
 
-                            <img src="https://www.fiixsoftware.com/wp-content/uploads/2017/02/coldwell_solar.png"
+                            <img class="lazyload" data-src="https://www.fiixsoftware.com/wp-content/uploads/2017/02/coldwell_solar.png"
                                 alt="">
                             <br>
                         </div>
@@ -199,7 +201,7 @@ layout: default
 
                         <div class="has-text-centered">
 
-                            <img src="https://www.fiixsoftware.com/wp-content/uploads/2018/04/bh-300.png" alt="">
+                            <img class="lazyload" data-src="https://www.fiixsoftware.com/wp-content/uploads/2018/04/bh-300.png" alt="">
                             <br>
                         </div>
 
@@ -222,7 +224,7 @@ layout: default
 
 
 
-<section>
+<section class="is-hidden-mobile">
 
     <div class="container">
         <div class="columns is-centered">
@@ -310,20 +312,20 @@ layout: default
 
                                     <div class="features_hover_content_triggers">
                                         <br>
-                                        <img src="{{ 'assets/images/work-orders.png' | prepend: site.baseurl }}"
+                                        <img class="lazyload" data-src="{{ 'assets/images/work-orders.png' | prepend: site.baseurl }}"
                                             class="features_hover_1" alt="Work order icon">
                                         <br>
-                                        <img src="{{ 'assets/images/maintenance.png' | prepend: site.baseurl }}"
+                                        <img class="lazyload" data-src="{{ 'assets/images/maintenance.png' | prepend: site.baseurl }}"
                                             class="features_hover_2" alt="Maintenance logo">
                                         <br>
-                                        <img src="{{ 'assets/images/building-multi.png' | prepend: site.baseurl }}"
+                                        <img class="lazyload" data-src="{{ 'assets/images/building-multi.png' | prepend: site.baseurl }}"
                                             class="features_hover_3" alt="Multiple buildings icon">
                                         <br>
                                         <br>
-                                        <img src="{{ 'assets/images/piechart.png' | prepend: site.baseurl }}"
+                                        <img class="lazyload" data-src="{{ 'assets/images/piechart.png' | prepend: site.baseurl }}"
                                             class="features_hover_4" alt="Pie chart icon">
                                         <br>
-                                        <img src="{{ 'assets/images/gear.png' | prepend: site.baseurl }}"
+                                        <img class="lazyload" data-src="{{ 'assets/images/gear.png' | prepend: site.baseurl }}"
                                             class="features_hover_5" alt="Gear icon">
 
 
@@ -354,50 +356,50 @@ layout: default
 
 
                         <div class="column is-3">
-                            <img src="{{ 'assets/images/molson-coors.png' | prepend: site.baseurl }}"
+                            <img class="lazyload" data-src="{{ 'assets/images/molson-coors.png' | prepend: site.baseurl }}"
                                 alt="Molson-Coors">
                         </div>
 
                         <div class="column is-3">
-                            <img src="{{ 'assets/images/magna.png' | prepend: site.baseurl }}" alt="Magna">
+                            <img class="lazyload" data-src="{{ 'assets/images/magna.png' | prepend: site.baseurl }}" alt="Magna">
                         </div>
                         <div class="column is-3">
-                            <img src="{{ 'assets/images/virgin.png' | prepend: site.baseurl }}" alt="Virgin">
+                            <img class="lazyload" data-src="{{ 'assets/images/virgin.png' | prepend: site.baseurl }}" alt="Virgin">
                         </div>
                         <div class="column is-3">
-                            <img src="{{ 'assets/images/kraft-heinz.png' | prepend: site.baseurl }}" alt="Kraft">
+                            <img class="lazyload" data-src="{{ 'assets/images/kraft-heinz.png' | prepend: site.baseurl }}" alt="Kraft">
                         </div>
                         <div class="column is-3">
-                            <img src="{{ 'assets/images/seaspan.png' | prepend: site.baseurl }}" alt="Seaspan">
+                            <img class="lazyload" data-src="{{ 'assets/images/seaspan.png' | prepend: site.baseurl }}" alt="Seaspan">
                         </div>
                         <div class="column is-3">
-                            <img src="{{ 'assets/images/KFC.png' | prepend: site.baseurl }}" alt="KFC">
+                            <img class="lazyload" data-src="{{ 'assets/images/KFC.png' | prepend: site.baseurl }}" alt="KFC">
                         </div>
                         <div class="column is-3">
-                            <img src="{{ 'assets/images/temper_sealy.png' | prepend: site.baseurl }}" alt="Temper">
+                            <img class="lazyload" data-src="{{ 'assets/images/temper_sealy.png' | prepend: site.baseurl }}" alt="Temper">
                         </div>
                         <div class="column is-3">
-                            <img src="{{ 'assets/images/toyota_logo.png' | prepend: site.baseurl }}" alt="Toyota">
+                            <img class="lazyload" data-src="{{ 'assets/images/toyota_logo.png' | prepend: site.baseurl }}" alt="Toyota">
                         </div>
                         <div class="column is-3">
-                            <img src="{{ 'assets/images/old-castle.png' | prepend: site.baseurl }}" alt="Old Castle">
+                            <img class="lazyload" data-src="{{ 'assets/images/old-castle.png' | prepend: site.baseurl }}" alt="Old Castle">
                         </div>
                         <div class="column is-3">
-                            <img src="{{ 'assets/images/alstom.png' | prepend: site.baseurl }}" alt="Alstom">
+                            <img class="lazyload" data-src="{{ 'assets/images/alstom.png' | prepend: site.baseurl }}" alt="Alstom">
                         </div>
                         <div class="column is-3">
-                            <img src="{{ 'assets/images/365-data-center.png' | prepend: site.baseurl }}"
+                            <img class="lazyload" data-src="{{ 'assets/images/365-data-center.png' | prepend: site.baseurl }}"
                                 alt="365 Data Center">
                         </div>
                         <div class="column is-3">
-                            <img src="{{ 'assets/images/american-standard.png' | prepend: site.baseurl }}"
+                            <img class="lazyload" data-src="{{ 'assets/images/american-standard.png' | prepend: site.baseurl }}"
                                 alt="American Standard">
                         </div>
                         <div class="column is-3">
-                            <img src="{{ 'assets/images/Siemens.png' | prepend: site.baseurl }}" alt="Siemens">
+                            <img class="lazyload" data-src="{{ 'assets/images/Siemens.png' | prepend: site.baseurl }}" alt="Siemens">
                         </div>
                         <div class="column is-3">
-                            <img src="{{ 'assets/images/colorado-rockies.png' | prepend: site.baseurl }}"
+                            <img class="lazyload" data-src="{{ 'assets/images/colorado-rockies.png' | prepend: site.baseurl }}"
                                 alt="colorado-rockies">
                         </div>
                     </div>
@@ -418,7 +420,7 @@ layout: default
                 <div class="column is-6">
                     <div class="columns is-centered is-variable is-8">
                         <div class="column is-4">
-                            <img src="{{ 'assets/images/fiix_phone.png' | prepend: site.baseurl }}" alt="fiix phone">
+                            <img class="lazyload" data-src="{{ 'assets/images/fiix_phone.png' | prepend: site.baseurl }}" alt="fiix phone">
                         </div>
                         <div class="column">
                             <br>
