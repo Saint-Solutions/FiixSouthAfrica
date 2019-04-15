@@ -17,7 +17,7 @@ title: Cloud-Based CMMS, Asset Maintenance Software & More | Fiix
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Fiix's cloud-based maintenance & asset management software organizes, tracks, and schedules your maintenance management activities. Get started for just $35.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
