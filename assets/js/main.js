@@ -76,3 +76,17 @@ $(".hover_content").mouseenter(function(e){
 	hovered_feature 	= textHovered.split("feature_hover_content_").pop();
 	triggerFeatures(hovered_feature);
 });
+
+
+
+
+$(".cellphone").hover(function(){
+	console.log(this);
+	$('.fas').show();
+	$('.fas').hide();
+	$('.cellphone-info').show();
+	$('.cellphone-info').hide();
+
+	$(this).find('.fas').show();
+	$(this).find('.cellphone-info').show();
+})
