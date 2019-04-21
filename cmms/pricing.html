@@ -127,31 +127,102 @@ layout: default
 
 
     <h1 class="subtitle is-2 has-text-centered">All plans include</h1>
+    <br>
 
-    <div>
+    <div class="container">
 
-        <div class="columns">
+        <div class="columns is-multiline">
 
             <div class="column is-half">
 
-                <div class="columns">
-                    <div class="column is-4">
-                        <span><img class="lazyload"
-                                data-src="{{ 'assets/images/lightning-fast-w.png' | prepend: site.baseurl }}"
+                <div class="columns is-gapless">
+                    <div class="column is-3">
+                        <span><img style="width: 50%" class="lazyload"
+                                data-src="{{ 'assets/images/asset_management.jpg' | prepend: site.baseurl }}"
                                 alt=""></span>
 
                     </div>
                     <div class="column">
                         <p class="subtitle is-4 ">Asset management</p>
                         <p class="is-size-6">
-                            Minutes to get set up, not weeks. Our cloud-based CMMS software quickly organizes
-                            all maintenance activities into one easy-to-use tool.
+                            Drag and drop functionality lets you quickly add equipment, clone records, and intuitively
+                            organize assets. Import existing assets from CSV or Excel to easily migrate from other
+                            systems.
+
                         </p>
                         <br>
                     </div>
                 </div>
 
             </div>
+
+
+            <div class="column is-half">
+
+                <div class="columns is-gapless">
+                    <div class="column is-3">
+                        <span><img style="width: 50%" class="lazyload"
+                                data-src="{{ 'assets/images/work_orders.jpg' | prepend: site.baseurl }}" alt=""></span>
+
+                    </div>
+                    <div class="column">
+                        <p class="subtitle is-4 ">Work orders</p>
+                        <p class="is-size-6">
+                            Easy to understand and quick to complete work orders. Includes work instructions, task
+                            lists, notes, files, and print to paper options.
+
+                        </p>
+                        <br>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="column is-half">
+
+                <div class="columns is-gapless">
+                    <div class="column is-3">
+                        <span><img style="width: 50%" class="lazyload"
+                                data-src="{{ 'assets/images/preventative_maint.jpg' | prepend: site.baseurl }}" alt=""></span>
+
+                    </div>
+                    <div class="column">
+                        <p class="subtitle is-4 ">Preventive maintenance</p>
+                        <p class="is-size-6">
+                            PMs and scheduled maintenance with date and time triggers. Complete with meter readings,
+                            event or alarm triggers, integrated work task creation, and notifications.
+
+                        </p>
+                        <br>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="column is-half">
+
+                    <div class="columns is-gapless">
+                        <div class="column is-3">
+                            <span><img style="width: 50%" class="lazyload"
+                                    data-src="{{ 'assets/images/mobile_app.jpg' | prepend: site.baseurl }}" alt=""></span>
+    
+                        </div>
+                        <div class="column">
+                            <p class="subtitle is-4 ">Mobile app</p>
+                            <p class="is-size-6">
+                                    Download our free iOS and Android mobile apps for your tablet or smartphone to access or enter data from the field as you work.
+    
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+    
+                </div>
+    
+
+
 
         </div>
 
@@ -161,5 +232,77 @@ layout: default
     </div>
 
 
+
+</section>
+
+<hr>
+
+<section class="section">
+
+    <h2 class="subtitle is-2 has-text-centered">Compare plan features</h2>
+
+    <br>
+    <br>
+
+
+
+
+    <div class="pricing-table">
+            <div class="pricing-plan">
+              <div class="plan-header">Starter</div>
+              <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>20</span>/month</div>
+              <div class="plan-items">
+                <div class="plan-item">20GB Storage</div>
+                <div class="plan-item">100 Domains</div>
+                <div class="plan-item">-</div>
+                <div class="plan-item">-</div>
+              </div>
+              <div class="plan-footer">
+                <button class="button is-fullwidth" disabled="disabled">Current plan</button>
+              </div>
+            </div>
+          
+            <div class="pricing-plan is-warning">
+              <div class="plan-header">Startups</div>
+              <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>40</span>/month</div>
+              <div class="plan-items">
+                <div class="plan-item">20GB Storage</div>
+                <div class="plan-item">25 Domains</div>
+                <div class="plan-item">1TB Bandwidth</div>
+                <div class="plan-item">-</div>
+              </div>
+              <div class="plan-footer">
+                <button class="button is-fullwidth">Choose</button>
+              </div>
+            </div>
+          
+            <div class="pricing-plan is-active">
+              <div class="plan-header">Growing Team</div>
+              <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>60</span>/month</div>
+              <div class="plan-items">
+                <div class="plan-item">200GB Storage</div>
+                <div class="plan-item">50 Domains</div>
+                <div class="plan-item">1TB Bandwidth</div>
+                <div class="plan-item">100 Email Boxes</div>
+              </div>
+              <div class="plan-footer">
+                <button class="button is-fullwidth">Choose</button>
+              </div>
+            </div>
+          
+            <div class="pricing-plan is-danger">
+              <div class="plan-header">Enterprise</div>
+              <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>100</span>/month</div>
+              <div class="plan-items">
+                <div class="plan-item">2TB Storage</div>
+                <div class="plan-item">100 Domains</div>
+                <div class="plan-item">1TB Bandwidth</div>
+                <div class="plan-item">1000 Email Boxes</div>
+              </div>
+              <div class="plan-footer">
+                <button class="button is-fullwidth">Choose</button>
+              </div>
+            </div>
+          </div>
 
 </section>

@@ -1,49 +1,73 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="shortcut icon" href="https://www.fiixsoftware.com/wp-content/uploads/2016/11/favicon.ico">
+    <link rel="apple-touch-icon" href="https://www.fiixsoftware.com/wp-content/uploads/2016/11/favicon57.png">
+    <link rel="apple-touch-icon" sizes="120x120"
+        href="https://www.fiixsoftware.com/wp-content/uploads/2016/11/favicon120.png">
+    <link rel="apple-touch-icon" sizes="76x76"
+        href="https://www.fiixsoftware.com/wp-content/uploads/2016/11/favicon76.png">
+    <link rel="apple-touch-icon" sizes="152x152"
+        href="https://www.fiixsoftware.com/wp-content/uploads/2016/11/favicon152.png">
+
+    <!-- HTML Meta Tags -->
+    <title>Cloud-Based CMMS, Asset Maintenance Software & More | Fiix</title>
+    <meta name="description"
+        content="Fiix's cloud-based maintenance & asset management software organizes, tracks, and schedules your maintenance management activities. Get started for just $40.">
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Cloud-Based CMMS, Asset Maintenance Software & More | Fiix">
+    <meta itemprop="description"
+        content="Fiix's cloud-based maintenance & asset management software organizes, tracks, and schedules your maintenance management activities. Get started for just $40.">
+    <meta itemprop="image" content="{{ 'assets/images/dashboard.jpg' | prepend: site.baseurl }}">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.fiixsoftware.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cloud-Based CMMS, Asset Maintenance Software & More | Fiix">
+    <meta property="og:description"
+        content="Fiix's cloud-based maintenance & asset management software organizes, tracks, and schedules your maintenance management activities. Get started for just $40.">
+    <meta property="og:image" content="{{ 'assets/images/dashboard.jpg' | prepend: site.baseurl }}">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cloud-Based CMMS, Asset Maintenance Software & More | Fiix">
+    <meta name="twitter:description"
+        content="Fiix's cloud-based maintenance & asset management software organizes, tracks, and schedules your maintenance management activities. Get started for just $40.">
+    <meta name="twitter:image" content="{{ 'assets/images/dash' | prepend: site.baseurl }}">
+
+    <!-- Meta Tags Generated via http://heymeta.com -->
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
     <link rel="stylesheet" href="{{ "assets/css/main.css" | prepend: site.baseurl }}">
-
-    <meta name="description" content="{% if content %} {{ content | strip_html | truncatewords:30 }} {% else %} Indie Web Developer {% endif %}" />
-    <link rel="shortcut icon" href="https://res.cloudinary.com/cinemakers/image/upload/f_auto/v1540439290/favicon.png" type="image/png" />
-    <link rel="canonical" href="https://www.ronaldlangeveld.com/" />
-    <meta name="referrer" content="no-referrer-when-downgrade" />
-    
-    <meta property="og:site_name" content="Ronald Langeveld" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Ronald Langeveld" />
-    <meta property="og:description" content="{% if content %} {{ content | strip_html | truncatewords:30 }} {% else %} Indie Web Developer {% endif %}" />
-    <meta property="og:url" content="https://www.ronaldlangeveld.com/" />
-    <meta property="og:image" content="{% if page.feature-img %}{{ page.feature-img }}{% else %}https://res.cloudinary.com/cinemakers/image/upload/f_auto/v1540219384/blog/IMG_4600-1.jpg{% endif %}" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Ronald Langeveld" />
-    <meta name="twitter:creator" content="@ronaldlangeveld">
-    <meta name="twitter:description" content="{% if content %} {{ content | strip_html | truncatewords:30 }} {% else %} Indie Web Developer {% endif %}" />
-    <meta name="twitter:url" content="https://www.ronaldlangeveld.com/" />
-    <meta name="twitter:image" content="{% if page.feature-img %}{{ page.feature-img }}{% else %}https://res.cloudinary.com/cinemakers/image/upload/f_auto/v1540219384/blog/IMG_4600-1.jpg{% endif %}" />
-    <meta property="og:image:width" content="2000" />
-    <meta property="og:image:height" content="1333" />
+    <link rel="stylesheet" href="{{ "assets/css/bulma_pricing.css" | prepend: site.baseurl }}">
 
 </head>
+
 <body>
 
-<div>
-    {{ content }}
-</div>
+    <div>
+        {{ content }}
+    </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.1.5/lazysizes.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-<script src="{{ "assets/js/main.js" | prepend: site.baseurl }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.1.5/lazysizes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="{{ "assets/js/main.js" | prepend: site.baseurl }}"></script>
 
 </body>
+
 </html>
