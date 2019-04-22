@@ -271,3 +271,42 @@ header.masthead {
   /* padding-bottom: 122px; */
   padding: 22px;
 }
+
+.navbar.is-info .navbar-brand .navbar-link.is-active, .navbar.is-info .navbar-brand .navbar-link:hover, .navbar.is-info .navbar-brand>a.navbar-item.is-active, .navbar.is-info .navbar-brand>a.navbar-item:hover {
+  background-color: #118fe400;
+  color: #fff;
+}
+
+.navbar.is-info .navbar-item.has-dropdown.is-active .navbar-link, .navbar.is-info .navbar-item.has-dropdown:hover .navbar-link {
+  background-color: #00afff00;
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1088px){
+.navbar.is-info .navbar-end .navbar-link.is-active, .navbar.is-info .navbar-end .navbar-link:hover, .navbar.is-info .navbar-end>a.navbar-item.is-active, .navbar.is-info .navbar-end>a.navbar-item:hover, .navbar.is-info .navbar-start .navbar-link.is-active, .navbar.is-info .navbar-start .navbar-link:hover, .navbar.is-info .navbar-start>a.navbar-item.is-active, .navbar.is-info .navbar-start>a.navbar-item:hover {
+    background-color: #0098ff00;
+    color: #fff;
+    text-decoration: underline;
+}
+}
+
+
+@media screen and (min-width: 1088px){
+.navbar-dropdown {
+    background-color: #fff;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top: 2px solid #dbdbdb;
+    box-shadow: 0 8px 8px rgba(10,10,10,.1);
+    display: none;
+    font-size: .875rem;
+    left: 0;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+    z-index: 20;
+    margin-top: -20px;
+
+}
+}
