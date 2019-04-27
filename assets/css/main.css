@@ -310,3 +310,15 @@ header.masthead {
 
 }
 }
+
+.backImg {
+  height: 700px!important;
+  display: block;
+  background-position: center center;
+
+}
+
+.sectionText {
+  margin-top: 200px;
+  padding: 20px;
+}
