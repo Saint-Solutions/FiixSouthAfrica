@@ -22,15 +22,9 @@ Industry Solutions,
 Integrations ✅
 ],
 
-
-Resources: sub[
-Ebooks,
-Resource Centre
-],
-
 Company: sub[
-About Us,
-Contact Us
+About Us ✅,
+Contact Us ✅ 
 
 ]
 

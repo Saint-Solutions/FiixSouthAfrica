@@ -106,6 +106,12 @@ body {
   background: url('../images/hexagon_grey60.png');
 }
 
+.wpb_hex_column2 {
+  width: 100%;
+  display: block;
+  margin-bottom: 0;
+  background: url('../images/hexagon_grey60.png');
+}
 
 .flip {
   -webkit-transform: scaleX(-1);
