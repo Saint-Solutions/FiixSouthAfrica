@@ -18,9 +18,8 @@ Demo
 
 Pricing Page  ✅,
 Solutions: sub[
-Maintenance Strategies (All these pages link back to the CMMS subpages) ,
 Industry Solutions,
-Integrations
+Integrations ✅
 ],
 
 
