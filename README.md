@@ -12,13 +12,13 @@ CMMS  ✅
 Features  ✅
 Mobile CMMS  ✅,
 Cloud & SaaS CMMS  ✅,
-Demo
+Demo ✅
 ]
 
 
 Pricing Page  ✅,
 Solutions: sub[
-Industry Solutions,
+Industry Solutions ✅,
 Integrations ✅
 ],
 
