@@ -28,11 +28,30 @@ layout: default
                     <br>
                     <div class="has-text-left box">
                             <form method="POST" action="https://formspree.io/hi@ronaldlangeveld.com">
-                                <label class="label" for="">Request a demo or tour of Fiix</label>
-
-                                <input class="input" type="email" name="email" placeholder="Your email" required>
-                                <br>
-                                <br>
+                                <div class="field">
+                                        <label class="label">Name</label>
+                                        <div class="control">
+                                          <input name="name" class="input" type="text" placeholder="John Doe" required>
+                                        </div>
+                                      </div>
+                                      <div class="field">
+                                        <label class="label">Email</label>
+                                        <div class="control">
+                                          <input name="email" class="input" type="email" placeholder="john@domain.com" required>
+                                        </div>
+                                      </div>
+                                      <div class="field">
+                                        <label class="label">Phone number</label>
+                                        <div class="control">
+                                          <input name="email" class="input" type="number" placeholder="+27123456789" required>
+                                        </div>
+                                      </div>
+                                      <div class="field">
+                                        <label class="label">Company name</label>
+                                        <div class="control">
+                                          <input name="company" class="input" type="text" placeholder="John Doe Pty Ltd">
+                                        </div>
+                                      </div>
                                 <label class="label" for="">I would like to</label>
                                 <div class="select">
                                         <select name="type">
@@ -41,9 +60,7 @@ layout: default
                                         </select>
                                       </div>
                                       <br>
-                                      <br>
-                                <textarea class="textarea" name="message" placeholder="Give us your name, number, company name and your needs and we'll get back to you to demo Fiix" required></textarea>
-                                <br>
+                                                            <br>
                                 <button class="button is-size-4 is-success" type="submit">Submit enquiry</button>
                               </form>
                           

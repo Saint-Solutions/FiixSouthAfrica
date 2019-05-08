@@ -101,3 +101,11 @@ $(".cellphone").hover(function(){
       $(".navbar-menu").toggleClass("is-active");
 
   });
+
+
+
+	$(".enquireModal").click(function() {
+
+		$(".modal").toggleClass("is-active");
+
+});
