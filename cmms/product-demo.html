@@ -27,7 +27,23 @@ layout: default
                     </div>
                     <br>
                     <div class="has-text-left">
-                            <a class="button is-size-4 is-success" href="">Book your demo</a>
+                            <form method="POST" action="https://formspree.io/YOUREMAILHERE">
+                                <input class="input" type="email" name="email" placeholder="Your email" required>
+                                <br>
+                                <br>
+                                <div class="select">
+                                        <select>
+                                          <option>Select dropdown</option>
+                                          <option>With options</option>
+                                        </select>
+                                      </div>
+                                      <br>
+                                      <br>
+                                <textarea class="textarea" name="message" placeholder="Give us your name, number, company name and your needs and we'll get back to you to demo Fiix" required></textarea>
+                                <br>
+                                <button class="button is-size-4 is-success" type="submit">Book your demo</button>
+                              </form>
+                          
                     </div>
                     <br>
                     <div class="has-text-centered">
