@@ -89,4 +89,3 @@ Changes to regular scope:
 
 Added industrial solutions sub pages in place of Ebook section. Reason: No access to original Ebooks + requires backend processing (beyond scope)
 
-
