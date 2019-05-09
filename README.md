@@ -27,7 +27,51 @@ Pricing Page  ✅,
 
 Solutions: sub[
 
-Industry Solutions ✅,
+Industry Solutions: sub [
+
+    amusementpark ✅,
+
+    church ✅,
+
+    city ✅, 
+
+    data centre ✅,
+
+    factory ✅,
+
+    farm ✅,
+
+    fleet ✅,
+
+    food ✅,
+
+    gym ✅,
+
+    hospital ✅,
+
+    industrial ✅,
+
+    lab ✅,
+
+    mine ✅,
+
+    power ✅,
+
+    public utils ✅,
+
+    regulatory compli ✅,
+
+    school maint ✅,
+
+    textile ✅,
+
+    transport ✅,
+
+    university ✅,
+
+    wastewater ✅
+
+]
 
 Integrations ✅
 
@@ -40,3 +84,9 @@ About Us ✅,
 Contact Us ✅ 
 
 ]
+
+Changes to regular scope:
+
+Added industrial solutions sub pages in place of Ebook section. Reason: No access to original Ebooks + requires backend processing (beyond scope)
+
+
