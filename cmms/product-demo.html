@@ -2,94 +2,94 @@
 layout: default
 ---
 
-<section class="hero is-link is-bold">
-    {% include navbar.html %}
-
+<section class="hero is-info" style="    background: #0097dc;
+background: -moz-linear-gradient(left, #1e68bc 0%, #3498db 100%);
+background: -webkit-linear-gradient(left, #1e68bc 0%, #3498db 100%);
+background: linear-gradient(to right, #1e68bc 0%, #3498db 100%); background: -webkit-linear-gradient(top, #1e68bc 4%, #3498db 100%);">
+{% include navbar.html %}
+<div style="background: url({{ 'assets/images/landing_pattern.png' | prepend: site.baseurl }})">
     <div class="hero-body">
         <div class="container">
             <div class="columns is-centered">
 
-                <div class="column is-8">
+                <div class="column is-6">
                     <h1 class="title is-1">Get Fiix</h1>
                     <h1 class="title is-1">Get Organized</h1>
                     <br>
-                    <h2 class="subtitle is-3">Fiix is maintenance management software that organizes, tracks, and
-                        schedules your maintenance activities</h2>
+                    <p class="is-size-3 has-text-weight-light">Fiix is maintenance management software that organizes, tracks, and
+                        schedules your maintenance activities</p>
+                        <br>
                     <p class="is-size-3" <strong>Faster. Better. For less.</strong></p>
                     <br>
-                    <div class="content is-medium">
-
-
+                    <div class="content has-text-weight-light is-justified">
                         <li> Get a walk-through of the Fiix maintenance management platform.
                         </li>
                         <li> View the reporting insights that Fiix can give your business.</li>
                         <li> Built for mobile devices, easy to use, and fits any size budget.</li>
-                    </div>
-                    <br>
-                    <div class="has-text-left box">
-                            <form method="POST" action="https://formspree.io/hi@ronaldlangeveld.com">
-                                <div class="field">
-                                        <label class="label">Name</label>
-                                        <div class="control">
-                                          <input name="name" class="input" type="text" placeholder="John Doe" required>
-                                        </div>
-                                      </div>
-                                      <div class="field">
-                                        <label class="label">Email</label>
-                                        <div class="control">
-                                          <input name="email" class="input" type="email" placeholder="john@domain.com" required>
-                                        </div>
-                                      </div>
-                                      <div class="field">
-                                        <label class="label">Phone number</label>
-                                        <div class="control">
-                                          <input name="email" class="input" type="number" placeholder="+27123456789" required>
-                                        </div>
-                                      </div>
-                                      <div class="field">
-                                        <label class="label">Company name</label>
-                                        <div class="control">
-                                          <input name="company" class="input" type="text" placeholder="John Doe Pty Ltd">
-                                        </div>
-                                      </div>
-                                      <div class="field">
-                                        <label class="label">I would like to</label>
-                                        <div class="select">
-                                            <select name="type">
-                                              <option>Schedule a demo</option>
-                                              <option>Get a tour of Fiix</option>
-                                              <option>Get to know more about your free eBooks</option>
-                                            </select>
-                                          </div>
-                                      </div>
 
-          
-                                      <br>
-                                                            <br>
-                                <button class="button is-size-4 is-success" type="submit">Submit enquiry</button>
-                              </form>
-                          
-                    </div>
-                    <br>
-                    <div class="has-text-centered">
-                            <img class="lazyload" data-src="{{ 'assets/images/bh-square.png' | prepend: site.baseurl }}"
-                            alt="">
-                    </div>
-                    
-                    <p>
-                        <strong> "Game changer. Since I have brought this system into our company we doubled efficiency
-                            and reduced downtime by 50%"
-                        </strong>
                         <br>
-                        Stern - B&H Photo
-                    </p>
-             
-                  
 
+             
+                    </div>
+                  
+                </div>
+                <div class="column is-6">
+                    <div class="has-text-left">
+
+
+                            <article class="message">
+                                <div class="message-header">
+                                  <p>Yes, I would like a live screenshare demo of Fiix.</p>
+                                </div>
+                                <div class="message-body">
+                                        <form method="POST" action="https://formspree.io/hi@ronaldlangeveld.com">
+                                            <div class="field">
+                                                    <label class="label">Name</label>
+                                                    <div class="control">
+                                                      <input name="name" class="input" type="text" placeholder="John Doe" required>
+                                                    </div>
+                                                  </div>
+                                                  <div class="field">
+                                                    <label class="label">Email</label>
+                                                    <div class="control">
+                                                      <input name="email" class="input" type="email" placeholder="john@domain.com" required>
+                                                    </div>
+                                                  </div>
+                                                  <div class="field">
+                                                    <label class="label">Phone number</label>
+                                                    <div class="control">
+                                                      <input name="email" class="input" type="number" placeholder="+27123456789" required>
+                                                    </div>
+                                                  </div>
+                                                  <div class="field">
+                                                    <label class="label">Company name</label>
+                                                    <div class="control">
+                                                      <input name="company" class="input" type="text" placeholder="John Doe Pty Ltd">
+                                                    </div>
+                                                  </div>
+                                                  <div class="field">
+                                                    <label class="label">I would like to</label>
+                                                    <div class="select">
+                                                        <select name="type">
+                                                          <option>Schedule a demo</option>
+                                                          <option>Get a tour of Fiix</option>
+                                                          <option>Get to know more about your free eBooks</option>
+                                                        </select>
+                                                      </div>
+                                                  </div>
+                
+                                            <button class="button is-size-6 is-success is-fullwidth" type="submit">Submit enquiry</button>
+                                          </form>
+                                </div>
+                              </article>
+                                                      
+                    
+                </div>
+                </div>
                 </div>
 
             </div>
-            <div class="columns is-centered">
+            <!-- <div class="columns is-centered">
 
                     <div class="column is-8">
     
@@ -147,12 +147,12 @@ layout: default
     
                     </div>
     
-                </div>
+                </div> -->
 
             <div>
 
             </div>
-
+</div>
         </div>
 
 </section>

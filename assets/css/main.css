@@ -1,5 +1,6 @@
 body {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+  /* font-family: "Open Sans", Arial, Helvetica, sans-serif !important; */
+  -webkit-font-smoothing: antialiased;
   
 }
 
@@ -51,7 +52,8 @@ body {
 
 .notification {
   border-radius: 0px !important;
-  height: 18rem;
+  min-height: 16rem;
+  max-height: 25rem;
 
 }
 
@@ -272,7 +274,8 @@ header.masthead {
 
 .pricingBox {
   background: #fff;
-  height: 25rem;
+  min-height: 27rem;
+  max-height: 35rem;
   position: relative;
   /* padding-bottom: 122px; */
   padding: 22px;
@@ -327,4 +330,17 @@ header.masthead {
 .sectionText {
   margin-top: 200px;
   padding: 20px;
+}
+
+
+.responsiveBg {
+  height: 100%;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.moveBlock {
+  padding-left: 50px;
+  padding-right: 50px;
 }
