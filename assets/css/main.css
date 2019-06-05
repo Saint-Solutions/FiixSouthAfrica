@@ -339,6 +339,13 @@ header.masthead {
 }
 
 
+.responsiveBackground {
+  height: 100%;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
 .responsiveBg {
   height: 100%;
   background-position: center;
