@@ -1,7 +1,9 @@
-<nav class="navbar is-info container " role="navigation" aria-label="main navigation">
+<nav class="navbar is-fixed-top transNav">
         <div class="navbar-brand">
             <a class="navbar-item is-hidden-mobile" href="/">
-                <img src="{{ 'assets/images/fiix_logo_white_retina.png' | prepend: site.baseurl }}" height="28" />
+                <img class="fixLogoWhite" src="{{ 'assets/images/fiix_logo_white_retina.png' | prepend: site.baseurl }}" height="28" />
+                <img style="display: none;" class="fixLogo" src="{{ 'assets/images/fiix_logo.png' | prepend: site.baseurl }}" height="28" />
+
             </a>
 
             <a role="button" class="navbar-burger burger has-text-white" aria-label="menu" aria-expanded="false"
@@ -19,12 +21,12 @@
             </div>
 
             <div style="margin-right: 5em;" class="navbar-end">
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link is-size-5 has-text-white">
+                <div class="toChange navbar-item has-dropdown is-hoverable has-text-grey-lighter">
+                    <a class="toChange navbar-link is-arrowless is-size-6 has-text-grey-lighter">
                         Products
                     </a>
 
-                    <div class="navbar-dropdown">
+                    <div class="navbar-dropdown is-boxed">
                         <a href="/cmms" class="navbar-item has-text-black">
                             CMMS
                         </a>
@@ -43,15 +45,15 @@
                     </div>
                 </div>
 
-                <a href="/cmms/pricing" class="navbar-item is-size-5 has-text-white">
+                <a href="/cmms/pricing" class="navbar-item toChange is-size-6 has-text-grey-lighter">
                     Pricing
                 </a>
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link is-size-5 has-text-white">
+                    <a class="navbar-link toChange is-arrowless is-size-6 has-text-grey-lighter">
                        Solutions
                     </a>
 
-                    <div class="navbar-dropdown">
+                    <div class="navbar-dropdown is-boxed">
                         <a href="/cmms/industry-solutions/" class="navbar-item has-text-black">
                         Industry Solutions
                         </a>
@@ -62,7 +64,7 @@
                     </div>
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link is-size-5 has-text-white">
+                        <a class="navbar-link is-arrowless is-size-6 toChange has-text-grey-lighter">
                           Company
                         </a>
     
@@ -77,9 +79,15 @@
                         </div>
                     </div>
                         
-                    <a href="https://www.fiixsoftware.com/cmms-login/" class="navbar-item is-size-5 has-text-white">
+                    <a href="https://www.fiixsoftware.com/cmms-login/" class="navbar-item toChange is-size-6 has-text-grey-lighter">
                     Login
                 </a>
+                <!-- <a href="https://www.fiixsoftware.com/cmms-login/" class="navbar-item is-size-6 has-text-white">
+                    Login
+                </a> -->
+                <span class="navbar-item">
+                    <a id="demoBTN" class="button is-white is-outlined is-size-7" href="/cmms/product-demo">Book a demo</a>
+                </span>
             </div>
         </div>
     </nav>

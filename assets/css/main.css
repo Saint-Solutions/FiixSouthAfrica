@@ -52,7 +52,7 @@ body {
 
 .notification {
   border-radius: 0px !important;
-  min-height: 16rem;
+  min-height: 18rem;
   max-height: 25rem;
 
 }
@@ -223,7 +223,8 @@ header.masthead {
 
 
   .navbar-item img {
-    max-height: 5rem;
+    max-height: 55px;
+    margin-left: 55px;
   }
   
 
@@ -242,6 +243,11 @@ header.masthead {
 
 .borderShadow {
   box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,0.16);
+  -webkit-transition: background .2s;
+    -moz-transition: background .2s;
+    -ms-transition: background .2s;
+    -o-transition: background .2s;
+    transition: background .2s;
 }
 
 
@@ -343,4 +349,19 @@ header.masthead {
 .moveBlock {
   padding-left: 50px;
   padding-right: 50px;
+}
+
+
+.transNav {
+  background-color: transparent;
+  color: #123456;
+}
+
+
+body.has-navbar-fixed-top, html.has-navbar-fixed-top {
+  padding-top: 0;
+}
+
+a.has-text-white:focus, a.has-text-white:hover, a.has-text-white:active {
+  color: #616161!important;
 }

@@ -109,3 +109,38 @@ $(".cellphone").hover(function(){
 		$(".modal").toggleClass("is-active");
 
 });
+
+$(function() {
+	var header = $(".navbar");
+	var navLink = $(".toChange");
+	var navItem = $(".toChange");
+	var demoBTN = $("#demoBTN");
+
+	$(window).scroll(function() {    
+			var scroll = $(window).scrollTop();
+			if (scroll >= 100) {
+				console.log('remove class');
+				header.removeClass("transNav");
+				navLink.removeClass("has-text-grey-lighter");
+				navItem.removeClass("has-text-grey-lighter");
+				demoBTN.removeClass("is-white");
+				header.addClass("is-white");
+				header.addClass("borderShadow");
+				demoBTN.addClass("is-link");
+				$(".fixLogoWhite").hide();
+				$(".fixLogo").show();
+			} else {
+				console.log('add class');
+				header.removeClass("is-white");
+				header.removeClass("borderShadow");
+				demoBTN.removeClass("is-link");
+				navItem.addClass("has-text-grey-lighter");
+				demoBTN.addClass("is-white");
+				navLink.addClass("has-text-grey-lighter");
+				header.addClass("transNav");
+				$(".fixLogoWhite").show();
+				$(".fixLogo").hide();
+			}
+	});
+
+});
