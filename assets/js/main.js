@@ -119,7 +119,7 @@ $(function() {
 
 	$(window).scroll(function() {    
 			var scroll = $(window).scrollTop();
-			if (scroll >= 100) {
+			if (scroll >= 30 ){
 				console.log('remove class');
 				header.removeClass("transNav");
 				navLink.removeClass("has-text-grey-lighter");

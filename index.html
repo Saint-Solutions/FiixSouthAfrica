@@ -4,38 +4,53 @@ layout: default
 
 <!-- href="{{ "assets/css/main.css" | prepend: site.baseurl }}"> -->
 
-<section style="background-image: url({{ 'assets/images/updated_background.jpg' | prepend: site.baseurl }})"
-    class="hero is-info is-medium ">
+<section style="background-image: url({{ 'assets/images/updated_background.jpg' | prepend: site.baseurl }})" class="hero is-info is-medium ">
+    <!-- <div class="responsiveBackground" style="background-image: url({{ 'assets/images/landing-dashboard-screen.png' | prepend: site.baseurl }})"> -->
+        <br>
+        <br>
+
     <div class="hero-body">
+        <br>
+        <br>
         <div class="container">
             <div class="columns is-gapless">
                 <div class="column is-6 has-text-centered">
+                    <div>
+                            <img class="coverImg lazyload is-hidden-mobile"
+                            data-src="{{ 'assets/images/landing-dashboard-screen.png' | prepend: site.baseurl }}" />
+                    </div>
                         <img class="mainImg lazyload is-hidden-desktop"
                         data-src="{{ 'assets/images/fiix_logo_white_retina.png' | prepend: site.baseurl }}" />
-                    <img class="mainImg lazyload is-hidden-mobile"
-                        data-src="{{ 'assets/images/landing-dashboard-screen.png' | prepend: site.baseurl }}" />
+
                 </div>
 
                 <div class="column is-6">
-                    <h1 class="title is-1 has-text-centered is-size-3-mobile">Join the maintenance intelligence revolution</h1>
-                    <h2 class="subtitle is-4 has-text-centered">Let the Fiix dashboard do the work for you. Make better
+                    <h1 class="title is-1 has-text-centered is-size-3-mobile has-text-weight-light ">Join the maintenance intelligence revolution</h1>
+                    <br>
+                    <h2 class="subtitle is-4 has-text-centered has-text-weight-light">Let the Fiix dashboard do the work for you. Make better
                         decisions, faster with turbo-charged visualized maintenance data and analytics at your
                         fingertips</h2>
 
                     <div class="has-text-centered">
-                        <a href="/cmms/product-demo" class="button is-success is-size-4 is-size-6-mobile">Get started with a free tour</a </div> </div> </div>
-                            </div> </div> </section> 
+                        <a href="/cmms/product-demo" class="button is-success is-size-4 is-size-6-mobile borderShadow">Get started with a free tour</a </div> </div> </div>
+                            </div> 
+                        
+                        </div> 
+                        </div>
+                        </div>
+                    
+                    </section> 
                             <section class="hero">
                         <div class="hero-body">
                             <div class="container">
                                 <div class="columns is-centered">
                                     <div class="column is-9">
-                                        <h1 class="subtitle is-2 has-text-centered">
+                                        <h1 class="subtitle is-3 has-text-centered">
                                             The fastest path to better asset maintenance & more
                                         </h1>
                                         <h2 class="subtitle is-4 has-text-centered">
                                             Fiix is cloud-based CMMS software for maintenance and asset management that
-                                            organizes, tracks, and schedules your maintenance activities. Faster.
+                                            organizes, tracks, and schedules your maintenance activities. <br> Faster.
                                             Better. For less.
                                         </h2>
 
@@ -43,7 +58,7 @@ layout: default
 
 
                                         <div class="has-text-centered">
-                                            <a href="/cmms/pricing" class="button is-size-4 is-size-6-mobile is-link is-outlined has-text-centered">
+                                            <a href="/cmms/pricing" class="button is-size-5 is-size-6-mobile is-link is-outlined has-text-centered">
                                                 Get started today for just R600
                                             </a>
                                         </div>
@@ -51,7 +66,7 @@ layout: default
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        <!-- </div> -->
 </section>
 
 
@@ -149,19 +164,11 @@ layout: default
                         <h2 class="subtitle is-1 has-text-centered">Discover Fiix</h2>
                         <br>
                     </div>
-
-                    <!-- <iframe class="lazyload" width="100%" height="500" data-src="https://www.youtube.com/embed/s5W8Oxdli10" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe> -->
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-
-
-
 
 <section style="background-image: url({{ 'assets/images/updated_background.jpg' | prepend: site.baseurl }})"
     class="hero is-info is-medium">
@@ -437,15 +444,17 @@ layout: default
     <div class="hero-body">
         <div class="container">
             <div class="columns is-centered">
-                <div class="column is-6">
+                <div class="column is-12">
                     <div class="columns is-centered is-variable is-8">
-                        <div class="column is-4">
-                            <img class="lazyload" data-src="{{ 'assets/images/fiix_phone.png' | prepend: site.baseurl }}" alt="fiix phone">
+                        <div style="background-image: url({{ 'assets/images/fiix_phone.png' | prepend: site.baseurl }}); display: block; height: 500px; background-size: auto 860px; width: 27em;" class="column is-5 is-hidden-mobile">
+                            <!-- <img class="lazyload" data-src="{{ 'assets/images/fiix_phone.png' | prepend: site.baseurl }}" alt="fiix phone"> -->
                         </div>
                         <div class="column">
                             <br>
-                            <h1 class="subtitle is-3 has-text-centered">Mobilize like never before</h1>
-                            <div class="content is-medium has-text-justified">
+                            <br>
+                            <br>
+                            <h1 class="subtitle is-3 has-text-left has-text-weight-light">Mobilize like never before</h1>
+                            <div class="content is-medium has-text-left has-text-weight-light">
                                 <p><span>The new Fiix <a href="/cmms/mobile-cmms/">mobile CMMS app</a> lets you be truly
                                         mobile with your maintenance operations. New features like offline mode and
                                         easier work order management put everything you need at your fingertips—wherever
@@ -462,8 +471,9 @@ layout: default
     </div>
 </section>
 
-{% include kick_tires.html %}
+<div id="kick_tires" style="margin-top: -36px;">
+        {% include kick_tires.html %}
+</div>
 
 
 
-{% include footer.html %}
