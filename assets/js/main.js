@@ -114,7 +114,8 @@ $(function() {
 	var header = $(".navbar");
 	var navLink = $(".toChange");
 	var navItem = $(".toChange");
-	var demoBTN = $("#demoBTN");
+	var demoBTN = $(".demoBTN");
+	var burger = $(".burger")
 
 	$(window).scroll(function() {    
 			var scroll = $(window).scrollTop();
@@ -127,6 +128,8 @@ $(function() {
 				header.addClass("is-white");
 				header.addClass("borderShadow");
 				demoBTN.addClass("is-link");
+				burger.removeClass("has-text-white");
+				burger.addClass("has-text-link");
 				$(".fixLogoWhite").hide();
 				$(".fixLogo").show();
 			} else {
@@ -138,6 +141,8 @@ $(function() {
 				demoBTN.addClass("is-white");
 				navLink.addClass("has-text-grey-lighter");
 				header.addClass("transNav");
+				burger.addClass("has-text-white");
+				burger.removeClass("has-text-link");
 				$(".fixLogoWhite").show();
 				$(".fixLogo").hide();
 			}
