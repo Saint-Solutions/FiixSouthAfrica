@@ -450,3 +450,39 @@ background: #0097dc;
     background: url('../images/Repeat-pattern-hexacubes-DkBlue.png') repeat top left,-ms-linear-gradient(to bottom, #3498db 0%, #1e68bc 100%);
     background: url('../images/Repeat-pattern-hexacubes-DkBlue.png') repeat top left,linear-gradient(to bottom, #3498db 0%, #1e68bc 100%);
 }
+
+
+.fiixDark {
+  background: #58595b;
+  background: -moz-linear-gradient(top,#9D9FA2 0%,#393b3d 100%,#2e2c2d 100%);
+  background: -webkit-linear-gradient(top,#9D9FA2 0%,#393b3d 100%,#2e2c2d 100%);
+  background: linear-gradient(to bottom,#9D9FA2 0%,#393b3d 100%,#2e2c2d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#58595b',endColorstr='#2e2c2d',GradientType=1);
+}
+
+
+.inner_header-right {
+  background: url('../images/integrations_header_right.png') repeat-y right bottom;
+  width: 100%;
+
+  display: block;
+}
+
+
+
+.inner_header-left {
+  width: 100%;
+
+  display: block;
+
+  background: url('../images/integrations_header_left.png') repeat-y left bottom;
+}
+
+.cloudHeader {
+  background: url('../images/hexagon_grey60.png');
+  background: #58595b;
+  background: -moz-linear-gradient(top,#9D9FA2 0%,#393b3d 100%,#2e2c2d 100%);
+  background: -webkit-linear-gradient(top,#9D9FA2 0%,#393b3d 100%,#2e2c2d 100%);
+  background: linear-gradient(to bottom,#9D9FA2 0%,#393b3d 100%,#2e2c2d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#58595b',endColorstr='#2e2c2d',GradientType=1);
+}
