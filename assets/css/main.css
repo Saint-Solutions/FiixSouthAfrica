@@ -486,3 +486,27 @@ background: #0097dc;
   background: linear-gradient(to bottom,#9D9FA2 0%,#393b3d 100%,#2e2c2d 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#58595b',endColorstr='#2e2c2d',GradientType=1);
 }
+
+.bigLaptop2{
+  position: absolute;
+  width: 874px;
+  right: -60px;
+  bottom: -132px;
+
+  /* max-width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: -60px;
+  right: -52px; */
+
+}
+
+/* .coverImg {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: -60px;
+  top: -52px;
+} */
