@@ -493,20 +493,13 @@ background: #0097dc;
   right: -60px;
   bottom: -132px;
 
-  /* max-width: 100%;
-  height: auto;
-  position: absolute;
-  bottom: 0;
-  left: -60px;
-  right: -52px; */
-
 }
 
-/* .coverImg {
-  max-width: 100%;
-  height: auto;
-  position: absolute;
-  bottom: 0;
-  left: -60px;
-  top: -52px;
-} */
+.aboutHeader {
+  background: url('../images/header_pattern.png') no-repeat 0 0, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0097dc), to(#14499a));
+  background: url('../images/header_pattern.png') no-repeat 0 0, -webkit-linear-gradient(to right, #0097dc 0%, #14499a 100%);
+  background: url('../images/header_pattern.png') no-repeat 0 0, -o-linear-gradient(to right, #0097dc 0%, #14499a 100%);
+  background: url('../images/header_pattern.png') no-repeat 0 0, -ms-linear-gradient(to right, #0097dc 0%, #14499a 100%);
+  background: url('../images/header_pattern.png') no-repeat 0 0, linear-gradient(to right, #0097dc 0%, #14499a 100%);
+  background-size: 15%, cover;
+}
