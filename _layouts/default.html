@@ -53,15 +53,16 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.5/venobox.min.css"  type="text/css" media="screen"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.5/venobox.min.css" type="text/css"
+        media="screen" />
     <link rel="stylesheet" href="{{ 'assets/css/main.css' | prepend: site.baseurl }}">
     <!-- <link rel="stylesheet" href="{{ "assets/css/bulma_pricing.css" | prepend: site.baseurl }}"> -->
 
 </head>
 
 <body class="has-navbar-fixed-top">
-        {% include navbar.html %}
-        {{ content }}
+    {% include navbar.html %}
+    {{ content }}
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -70,6 +71,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.5/venobox.min.js"></script>
     <script src="{{ 'assets/js/main.js' | prepend: site.baseurl }}"></script>
+
+
+    
+    <!-- Start of Async Drift Code -->
+    <script> "use strict"; !function () { var t = window.driftt = window.drift = window.driftt || []; if (!t.init) { if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice.")); t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"], t.factory = function (e) { return function () { var n = Array.prototype.slice.call(arguments); return n.unshift(e), t.push(n), t; }; }, t.methods.forEach(function (e) { t[e] = t.factory(e); }), t.load = function (t) { var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script"); o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js"; var i = document.getElementsByTagName("script")[0]; i.parentNode.insertBefore(o, i); }; } }(); drift.SNIPPET_VERSION = '0.3.1'; drift.load('gdddritxbxzx'); </script>
+    <!-- End of Async Drift Code -->
 
 
 </body>
