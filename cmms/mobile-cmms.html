@@ -3,7 +3,7 @@ layout: default
 ---
 
 <!-- href="{{ "assets/css/main.css" | prepend: site.baseurl }}"> -->
-<section class="hero is-medium is-link is-bold">
+<section class="hero is-large is-link fiixGrad">
 
     <div class="hero-body">
         <div class="container">
@@ -11,19 +11,20 @@ layout: default
                 <div class="column is-7">
                     <br>
                     <br>
-                    <h1 class="title is-1 is-size-3-mobile has-text-centered">
+                    <h1 class="reallyBigText is-size-3-mobile has-text-centered">
                         Maintenance without limitations
                     </h1>
-                    <h2 class="subtitle is-2 has-text-centered">The new Fiix CMMS mobile app works anywhere you do</h2>
+
+                    <h2 class="subtitle is-2 has-text-centered has-text-weight-bold is-size-4-mobile">The new Fiix CMMS mobile app works anywhere you do</h2>
                     <div class="has-text-centered">
                         <a class="button is-size-4 is-size-7-mobile is-white is-outlined" href="/cmms/product-demo">
                             Book a demo</a>
                     </div>
                 </div>
                 <div class="column is-2 has-text-centered is-hidden-mobile">
-                    <img class="lazyload mainImg"
+                    <img class="lazyload floatAndroid"
                         data-src="{{ 'assets/images/android-header.png' | prepend: site.baseurl }}" />
-                    <img class="lazyload mainImg"
+                    <img class="lazyload floatIphone"
                         data-src="{{ 'assets/images/iphone-header.png' | prepend: site.baseurl }}" />
 
                 </div>
@@ -34,13 +35,13 @@ layout: default
 
 
 
-<section class="hero">
+<section class="hero is-medium">
     <div class="hero-body">
         <div class="container">
-            <h1 class="subtitle is-1 has-text-centered">
+            <h1 class="subtitle is-1 has-text-centered has-text-weight-light">
                 Mobilize like never before
             </h1>
-            <p class="is-size-6 has-text-centered">The new Fiix mobile CMMS software app truly allows for you to be
+            <p class="is-size-6 has-text-centered has-text-weight-light">The new Fiix mobile CMMS software app truly allows for you to be
                 on-the-go with your maintenance operations. <br> New features like offline mode and easier work order
                 management put everything you need at your fingertips—wherever work takes you. <br> Download today and
                 see for yourself what it’s like to work without limitations.</p>
@@ -125,10 +126,10 @@ layout: default
 
 
 
-<section class="hero is-link is-bold">
+<section class="hero is-link fiixBlue">
     <div class="hero-body">
         <div class="container">
-            <h1 class="title has-text-centered">
+            <h1 class="title is-2 has-text-centered has-text-weight-light">
                 Discover the Fiix mobile CMMS app
             </h1>
             <br>
@@ -155,7 +156,7 @@ layout: default
 <section class="hero">
     <div class="hero-body">
         <div class="container">
-            <h1 class="subtitle is-3 has-text-centered">
+            <h1 class="subtitle is-1 has-text-weight-light has-text-centered">
                 Built for the mobile maintenance team
             </h1>
             <h2 class="is-size-5 has-text-centered">
@@ -210,10 +211,10 @@ layout: default
 </section>
 
 
-<section class="hero is-link is-bold">
+<section class="hero is-link fiixBlue">
     <div class="hero-body">
         <div class="container">
-            <h1 class="title has-text-centered">
+            <h1 class="title is-2 has-text-centered has-text-weight-light">
                 Get started with the Fiix mobile CMMS app
             </h1>
             <br>
@@ -224,8 +225,8 @@ layout: default
                     <div class="has-text-centered">
 
                         <h1 class="title is-1">1</h1>
-                        <h2 class="subtitle is-6 has-text-weight-bold">On your mobile device, open the App Store (iOS)
-                            or Google Play (Android)</h2>
+                        <h2 class="subtitle is-6 has-text-weight-bold">On your mobile device, open the <a href="https://itunes.apple.com/app/id1391162398"><u>App Store</u></a> (iOS)
+                            or <a href="https://play.google.com/store/apps/details?id=fiix.cmms.mobile"><u>Google Play</u></a> (Android)</h2>
                     </div>
 
                 </div>
@@ -248,21 +249,22 @@ layout: default
 
                         <h1 class="title is-1">3</h1>
                         <h2 class="subtitle is-6 has-text-weight-bold">Sign in to the app using your existing domain
-                            name and Fiix login. Don’t have an account? Book a free live demo here.
+                            name and Fiix login. Don’t have an account? <a href="/cmms/product-demo"><u>Book a free live demo here</u></a>.
                         </h2>
                     </div>
 
                 </div>
 
             </div>
-            <hr>
-            <p class="has-text-centered">For more detailed step-by-step instructions, read our FAQs</p>
+       <br>
+       <br>
+            <p class="has-text-centered">For more detailed step-by-step instructions, <a href="#faq"><u>read our FAQs</u></a></p>
         </div>
     </div>
 </section>
 
 
-<section class="hero">
+<section id="faq" class="hero">
     <div class="hero-body">
         <div class="container">
             <h1 class="subtitle is-2 has-text-centered">
@@ -270,8 +272,8 @@ layout: default
             </h1>
             <br>
             <div class="card">
-                <header style="background-color: #3273dc;" class="card-header">
-                    <p class="card-header-title has-text-white">
+                <header class="card-header faqCardHeader">
+                    <p class="card-header-title">
                         How can I get the new app?
                     </p>
 
@@ -287,8 +289,8 @@ layout: default
             </div>
             <br>
             <div class="card">
-                <header style="background-color: #3273dc;" class="card-header">
-                    <p class="card-header-title has-text-white">
+                <header class="card-header faqCardHeader">
+                    <p class="card-header-title">
                         Do I need new login credentials?
                     </p>
 
@@ -306,8 +308,8 @@ layout: default
             <br>
 
             <div class="card">
-                <header style="background-color: #3273dc;" class="card-header">
-                    <p class="card-header-title has-text-white">
+                <header class="card-header faqCardHeader">
+                    <p class="card-header-title">
                         I have the old app on my mobile device. Will I have any problems using it?
                     </p>
 
@@ -326,8 +328,8 @@ layout: default
             <br>
 
             <div class="card">
-                <header style="background-color: #3273dc;" class="card-header">
-                    <p class="card-header-title has-text-white">
+                <header class="card-header faqCardHeader">
+                    <p class="card-header-title">
                         What does offline mode mean?
                     </p>
 
@@ -348,8 +350,8 @@ layout: default
             <br>
 
             <div class="card">
-                <header style="background-color: #3273dc;" class="card-header">
-                    <p class="card-header-title has-text-white">
+                <header class="card-header faqCardHeader">
+                    <p class="card-header-title">
                         I am an admin/manager, but I don’t see any work orders for my subordinates/direct reports. Why
                         is this?
                     </p>
@@ -368,8 +370,8 @@ layout: default
             <br>
 
             <div class="card">
-                <header style="background-color: #3273dc;" class="card-header">
-                    <p class="card-header-title has-text-white">
+                <header class="card-header faqCardHeader">
+                    <p class="card-header-title">
                         Will the DONE tab on the work order listing page show me closed work orders as well?
                     </p>
 
@@ -388,8 +390,8 @@ layout: default
             <br>
 
             <div class="card">
-                <header style="background-color: #3273dc;" class="card-header">
-                    <p class="card-header-title has-text-white">
+                <header class="card-header faqCardHeader">
+                    <p class="card-header-title">
                         Will I be able to create work requests if I am logged in to the new app?
                     </p>
 
