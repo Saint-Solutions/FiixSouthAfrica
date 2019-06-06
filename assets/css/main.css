@@ -336,6 +336,8 @@ header.masthead {
 .sectionText {
   margin-top: 200px;
   padding: 20px;
+  margin-left: 21px;
+  margin-right: 32px;
 }
 
 
@@ -438,4 +440,13 @@ background: #0097dc;
 
 .faqCardHeader {
   background-color: #EBECEF!important;
+}
+
+
+.industryHeader {
+    background: url('../images/Repeat-pattern-hexacubes-DkBlue.png') repeat top left,-webkit-gradient(linear, 0% 0%, 0% 100%, from(#3498db), to(#1e68bc));
+    background: url('../images/Repeat-pattern-hexacubes-DkBlue.png') repeat top left,-webkit-linear-gradient(to bottom, #3498db 0%, #1e68bc 100%);
+    background: url('../images/Repeat-pattern-hexacubes-DkBlue.png') repeat top left,-o-linear-gradient(to bottom, #3498db 0%, #1e68bc 100%);
+    background: url('../images/Repeat-pattern-hexacubes-DkBlue.png') repeat top left,-ms-linear-gradient(to bottom, #3498db 0%, #1e68bc 100%);
+    background: url('../images/Repeat-pattern-hexacubes-DkBlue.png') repeat top left,linear-gradient(to bottom, #3498db 0%, #1e68bc 100%);
 }
