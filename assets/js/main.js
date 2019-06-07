@@ -190,3 +190,11 @@ $(".bigImg").click(function () {
 $(".modal-close").click(function () {
 $(".modal").removeClass('is-active');
 });
+
+$('.industryDD').on('change', function() {
+	var link = "#"+ this.value;
+	$('html, body').animate({
+		scrollTop: $(link).offset().top
+}, 2000);
+});
+
