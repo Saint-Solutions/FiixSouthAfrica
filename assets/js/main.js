@@ -164,3 +164,15 @@ $(".popup").on("click", function(e) {
 		text: dataPopup
 	});
 });
+
+
+
+$(".learnMoreBtn").click(function(){
+$(".learnMoreModal").addClass('is-active');
+
+});
+
+$(".exitModal").click(function(){
+	$(".modal").removeClass('is-active');
+	
+	});
