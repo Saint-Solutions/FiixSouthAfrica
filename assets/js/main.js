@@ -153,3 +153,14 @@ $(function() {
 $(document).ready(function(){
 	$('.venobox').venobox(); 
 });
+
+
+$(".popup").on("click", function(e) {
+	e.preventDefault();
+	var dataPopup = $(this).attr('data-popup');
+	var dataTitle = $(this).text()
+	swal({
+		title: dataTitle,
+		text: dataPopup
+	});
+});
