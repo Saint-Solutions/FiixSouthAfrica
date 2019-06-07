@@ -503,3 +503,14 @@ background: #0097dc;
   background: url('../images/header_pattern.png') no-repeat 0 0, linear-gradient(to right, #0097dc 0%, #14499a 100%);
   background-size: 15%, cover;
 }
+
+
+
+.download_now {
+  background: url('../images/icons.png') no-repeat top left, -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1e68bc), to(#3498db));
+  background: url('../images/icons.png') no-repeat top left, -webkit-linear-gradient(to right, #1e68bc 0%, #3498db 100%);
+  background: url('../images/icons.png') no-repeat top left, -o-linear-gradient(to right, #1e68bc 0%, #3498db 100%);
+  background: url('../images/icons.png') no-repeat top left, -ms-linear-gradient(to right, #1e68bc 0%, #3498db 100%);
+  background: url('../images/icons.png') no-repeat top left, linear-gradient(to right, #1e68bc 0%, #3498db 100%);
+  /* position: relative; */
+}
