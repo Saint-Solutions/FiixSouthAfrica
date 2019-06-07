@@ -513,3 +513,8 @@ background: #0097dc;
   background: url('../images/icons.png') no-repeat top left, linear-gradient(to right, #1e68bc 0%, #3498db 100%);
   /* position: relative; */
 }
+
+.extraPadding {
+  padding-top: 3em;
+  padding-bottom: 12em;
+}
