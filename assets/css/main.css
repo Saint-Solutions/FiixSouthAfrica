@@ -518,3 +518,8 @@ background: #0097dc;
   padding-top: 3em;
   padding-bottom: 12em;
 }
+
+
+.bigImg {
+  cursor: pointer;
+}
