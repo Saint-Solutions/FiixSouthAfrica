@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CMMS Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <style>
+        @import "https://fonts.googleapis.com/css?family=Open+Sans";
+
+        body {
+            font-family: 'Open Sans', sans-serif !important;
+            color: #58595B;
+            background: #F8F9FA;
+            overflow: hidden;
+            line-height: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-text-stroke: 0.45px;
+            -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+            text-shadow: #fff 0px 1px 1px
+        }
+
+        .wrapper {
+            padding: 20px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center
+        }
+
+        .inner_wrap {
+            border: 1px solid #D6E0EB;
+            border-radius: 3px;
+            background: white;
+            width: calc(400px - 60px);
+            padding: 45px 30px
+        }
+
+        header {
+            margin-bottom: 45px
+        }
+
+        header img {
+            width: 116px;
+            margin: 0 auto;
+            display: block
+        }
+
+        .wrapper h2 {
+            font-size: 28px;
+            text-align: center;
+            color: #0097dc;
+            margin-bottom: 30px
+        }
+
+        .wrapper p {
+            color: #5a5a5b
+        }
+
+        .wrapper p.inst_constant {
+            color: #5a5a5b;
+            font-size: 16px;
+            font-weight: normal;
+            text-align: center
+        }
+
+        .instructions {
+            color: #5a5a5b;
+            font-size: 16px;
+            font-weight: normal;
+            text-align: center;
+            margin-bottom: 30px
+        }
+
+        .message {
+            font-size: 16px;
+            width: calc(100% - 20px);
+            display: block;
+            padding: 10px;
+            display: none;
+            border-radius: 3px;
+            margin-bottom: 30px
+        }
+
+        .error {
+            color: #58595B;
+            font-size: 14px;
+            text-align: center;
+            border: solid 1px #0097dc
+        }
+
+        .error a {
+            text-decoration: underline;
+            text-decoration-color: #58595B;
+            color: #58595B
+        }
+
+        .input_container {
+            position: relative;
+            margin-bottom: 30px
+        }
+
+        form input[type=text] {
+            height: calc(40px - 30px);
+            width: calc(214px - 30px);
+            border-radius: 3px;
+            border: solid 1px #9d9fa2;
+            text-align: left;
+            color: #5a5a5b;
+            font-size: 16px;
+            background: white;
+            padding: 15px
+        }
+
+        form input[type=text]:focus {
+            outline: none
+        }
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill:active {
+            background: white
+        }
+
+        form input::placeholder {
+            color: #9d9fa2
+        }
+
+        .extension {
+            position: absolute;
+            right: 0;
+            text-align: right;
+            top: 30%;
+            font-size: 16px;
+            color: #9d9fa2
+        }
+
+        #loginAnchor,
+        form input[type=submit] {
+            background: #23c720;
+            display: block;
+            width: 100%;
+            color: #fff;
+            border: none;
+            padding: 5px;
+            font-size: 20px;
+            height: 50px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600
+        }
+
+        #loginAnchor {
+            text-align: center;
+            line-height: 35px;
+            text-decoration: none;
+            width: calc(100% - 10px)
+        }
+
+        .support {
+            width: 100%;
+            text-align: center;
+            margin-top: 40px
+        }
+
+        .support p {
+            font-size: 14px;
+            color: #9d9fa2
+        }
+
+        .support a {
+            color: #0097dc;
+            text-decoration: none
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper">
+        <header>
+            <h1><a href="https://www.fiixsoftware.com"><img
+                        src="https://www.fiixsoftware.com/wp-content/uploads/2018/02/Fiix_LBlue.png" alt="Fiix logo"
+                        title="Fiix logo"></a></h1>
+        </header>
+        <div class="inner_wrap">
+            <h2>Welcome</h2>
+            <p class="instructions">Just enter your company subdomain and you'll be on your way.</p>
+            <p class="message"><small></small></p>
+            <form novalidate id="subdomainform" method="post">
+                <div class="input_container">
+                    <input type="text" name="subdomain" id="subdomain" placeholder="subdomain">
+                    <span class="extension">.macmms.com</span>
+                </div>
+                <div>
+                    <input type="submit" id="next" name="next" value="Go to login page">
+                </div>
+            </form>
+        </div>
+        <div class="support">
+            <p>Having trouble? <a href="/contact-us">Contact support</a></p>
+            <p>Don't have an account? <a href="/cmms/pricing/" target="_blank">Click here to sign up</a> or
+                <a href="/cmms/product-demo" target="_blank">take a free tour</a></p>
+        </div>
+    </div>
+</body>
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var cookies = Cookies.get();
+        var subdomain_name;
+        var keypressData = "example";
+        var message;
+        var errorCount = 0;
+        var errorTimeoutHandle;
+        subdomain = Cookies.get('subdomain');
+        if (typeof subdomain != 'undefined') {
+            subdomain = subdomain.replace(/(^\w+:|^)\/\//, '');
+            subdomain = subdomain.replace(".macmms.com", '');
+            $("input#subdomain").val(subdomain);
+            $(".instructions").text("Just enter your company subdomain and you'll be on your way.");
+            var heading = "Welcome back";
+            $(".inner_wrap h2").text(heading);
+        } else {
+            $(".instructions").text("Just enter your company subdomain and you'll be on your way.");
+            var heading = "Welcome";
+            $(".inner_wrap h2").text(heading);
+        }
+        $("#subdomain").on("keyup", function () {
+            $(".message").hide();
+            keypressData = $("#subdomain").val();
+            if (keypressData < 1) {
+                $(".subdomain_example span").text("");
+            } else {
+                $(".subdomain_example span").text(": " + keypressData + ".macmms.com");
+            }
+        });
+        $("#subdomainform").on("submit", function (e) {
+            e.preventDefault();
+            clearTimeout(errorTimeoutHandle);
+            subdomain_name = $("#subdomain").val();
+            subdomain_name = subdomain_name.replace(".macmms.com", "");
+            subdomain_name = subdomain_name.split('.')[0];
+
+            function messages(message, response) {
+                $(".message").addClass(response);
+                $(".message small").html(message);
+                $(".message").slideDown(400);
+            }
+            if (subdomain_name.length >= 1) {
+                var subdomain_full = subdomain_name + ".macmms.com";
+                $(".message").hide();
+                var url = "https://" + subdomain_full;
+                Cookies.set('subdomain', url, {
+                    expires: 5
+                });
+                window.top.location.href = url;
+                errorTimeoutHandle = setTimeout(function () {
+                    messages("We can't find the subdomain you entered. Please try again.", response = "error");
+                }, 1000);
+            } else {
+                message = "Please enter a subdomain";
+                messages(message, response = "error");
+            }
+        });
+    });
+</script>
+
+</html>
