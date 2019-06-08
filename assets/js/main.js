@@ -2,41 +2,26 @@ console.log('DEVELOPED BY RONALD LANGEVELD')
 console.log('https://ronaldlangeveld.com')
 
 $(window).on('load', function () {
-	// var url = window.location.pathname;
-	// console.log(url);
-	// // $('a[data-link *= "'+url+'"]').addClass('has-text-link');
-	// // var foundin = $('a[data-link]:contains("cmms")');
-	// 	var foundin = $('a[data-link]:contains("'+ url + '")');
-	// console.log(foundin);
-	// $(foundin).addClass('has-text-link');
+	var url = window.location.pathname;
+	var lastChar = url[url.length -1];
 
-	$(".navbar-item").each(function(){
-		if ($(this).attr("href") == window.location.pathname){
-				$(this).addClass("has-text-link");
-		}
-});
+	console.log(lastChar);
 
-
-
-
-	// if ($('#field > div.field-item:contains("someText")').length > 0) {
-	// 	$("#somediv").addClass("thisClass");
-	// }
-
-	// $('.navbar-item[href*="' + url + '"]').addClass('has-text-link');
-	// $('a[data-link="' + window.location.hash.replace('#', '') + '"]').trigger('click');
-	// $('a[data-link*="'+ url +'"]').addClass('has-text-link');
-
-	// if (url.indexOf('a[data-link*="'+ url +'"]') > -1) {
-	//   console.log(this);
-	//   $(this).addClass('has-text-link');
-	// } else {
-	//   console.log(false);
-	// }
-
-
-
-
+	if(lastChar === '/'){
+		var newStr = url.slice(0,url.length-1);
+		console.log(true);
+		$(".navbar-item").each(function(){
+			if ($(this).attr("href") == newStr){
+					$(this).addClass("has-text-link");
+			}
+	});
+	} else {
+		$(".navbar-item").each(function(){
+			if ($(this).attr("href") == window.location.pathname){
+					$(this).addClass("has-text-link");
+			}
+	});
+	};
 });
 
 
