@@ -1,12 +1,13 @@
-$(window).on('load', function() {
+console.log('DEVELOPED BY RONALD LANGEVELD')
+console.log('https://ronaldlangeveld.com')
+
+$(window).on('load', function () {
 	var url = window.location.pathname;
 	console.log(url);
-
 	$('.navbar-item[href="' + url + '"]').addClass('has-text-link');
+});
 
-   });
 
-console.log("hello world");
 
 $(document).ready(function () {
 	// Target your .container, .wrapper, .post, etc.
@@ -196,13 +197,13 @@ $(".bigImg").click(function () {
 });
 
 $(".modal-close").click(function () {
-$(".modal").removeClass('is-active');
+	$(".modal").removeClass('is-active');
 });
 
-$('.industryDD').on('change', function() {
-	var link = "#"+ this.value;
+$('.industryDD').on('change', function () {
+	var link = "#" + this.value;
 	$('html, body').animate({
 		scrollTop: $(link).offset().top
-}, 2000);
+	}, 2000);
 });
 
