@@ -1,3 +1,11 @@
+$(window).on('load', function() {
+	var url = window.location.pathname;
+	console.log(url);
+
+	$('.navbar-item[href="' + url + '"]').addClass('has-text-link');
+
+   });
+
 console.log("hello world");
 
 $(document).ready(function () {
