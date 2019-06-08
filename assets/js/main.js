@@ -1,4 +1,4 @@
-console.log('DEVELOPED BY RONALD LANGEVELD')
+console.log('DEVELOPED BY RONALD LANGEVELD FOR SAINT SOLUTIONS')
 console.log('https://ronaldlangeveld.com')
 
 $(window).on('load', function () {
