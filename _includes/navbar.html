@@ -6,7 +6,7 @@
 
             </a>
 
-            <a role="button" class="navbar-burger burger has-text-white" aria-label="menu" aria-expanded="false"
+            <a role="button" class="desktopNav navbar-burger burger has-text-white" aria-label="menu" aria-expanded="false"
                 data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -87,6 +87,105 @@
                 </a> -->
                 <span class="navbar-item">
                     <a class="demoBTN button is-white is-outlined is-size-7" href="/cmms/product-demo">Book a demo</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <nav class="navbar is-hidden-desktop is-fixed-top is-white">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <!-- <img class="fixLogoWhite" src="{{ 'assets/images/fiix_logo_white_retina.png' | prepend: site.baseurl }}" height="28" /> -->
+                <img src="{{ 'assets/images/fiix_logo.png' | prepend: site.baseurl }}" height="28" />
+
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+
+
+            </div>
+
+            <div style="margin-right: 5em;" class="navbar-end">
+                <a data-link="home" href="/" class="navbar-item is-size-6 has-text-weight-bold">
+                   Home
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-arrowless is-size-6 has-text-weight-bold">
+                        Products
+                    </a>
+
+                    <div class="navbar-dropdown is-boxed">
+                        <a data-link="cmms" href="/cmms" class="navbar-item">
+                            CMMS
+                        </a>
+                        <a data-link="features" href="/cmms/features" class="navbar-item">
+                            Features
+                        </a>
+                        <a data-link="mobile-cmms" href="/cmms/mobile-cmms" class="navbar-item">
+                            Mobile CMMS 
+                        </a>
+                        <a data-link="cloud-maintenance-software" href="/cmms/cloud-maintenance-software" class="navbar-item">
+                           Cloud and SaaS CMMS
+                        </a>
+                        <a data-link="product-demo" href="/cmms/product-demo" class="navbar-item">
+                            Demo
+                         </a>
+                    </div>
+                </div>
+
+                <a data-link="pricing" href="/cmms/pricing" class="navbar-item is-size-6 has-text-weight-bold">
+                    Pricing
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-arrowless is-size-6 has-text-weight-bold">
+                       Solutions
+                    </a>
+
+                    <div class="navbar-dropdown is-boxed">
+                        <a data-link="industry-solutions" href="/cmms/industry-solutions" class="navbar-item">
+                        Industry Solutions
+                        </a>
+                        <a data-link="integrations" href="/integrations" class="navbar-item">
+                          Integrations
+                        </a>
+
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link is-arrowless is-size-6 has-text-weight-bold">
+                          Company
+                        </a>
+    
+                        <div class="navbar-dropdown">
+                            <a data-link="about-us" href="/about-us" class="navbar-item">
+                         About Us
+                            </a>
+                            <a data-link="contact-us" href="/contact-us" class="navbar-item">
+                           Contact Us
+                            </a>
+    
+                        </div>
+                    </div>
+                        
+                    <a href="/cmms-login" class="navbar-item is-size-6 has-text-weight-bold">
+                    Login
+                </a>
+                <!-- <a href="https://www.fiixsoftware.com/cmms-login/" class="navbar-item is-size-6 has-text-white">
+                    Login
+                </a> -->
+                <span class="navbar-item">
+                    <a class="button is-outlined is-size-7" href="/cmms/product-demo">Book a demo</a>
                 </span>
             </div>
         </div>

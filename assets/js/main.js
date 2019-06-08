@@ -141,7 +141,7 @@ $(function () {
 	var navLink = $(".toChange");
 	var navItem = $(".toChange");
 	var demoBTN = $(".demoBTN");
-	var burger = $(".burger")
+	var burger = $(".desktopNav");
 
 	$(window).scroll(function () {
 		var scroll = $(window).scrollTop();
