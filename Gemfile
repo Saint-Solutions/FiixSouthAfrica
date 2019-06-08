@@ -16,6 +16,7 @@ gem "jekyll-assets"
 gem 'jekyll-sitemap'
 gem 'jekyll-minifier'
 gem 'jekyll-compress-images'
+gem 'jekyll-gzip'
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.

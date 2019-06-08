@@ -67,6 +67,8 @@ GEM
       image_optim_pack
     jekyll-feed (0.12.1)
       jekyll (>= 3.7, < 5.0)
+    jekyll-gzip (2.1.1)
+      jekyll (~> 3.0)
     jekyll-minifier (0.1.10)
       cssminify2 (~> 2.0)
       htmlcompressor (~> 0.4)
@@ -137,6 +139,7 @@ DEPENDENCIES
   jekyll-assets
   jekyll-compress-images
   jekyll-feed (~> 0.6)
+  jekyll-gzip
   jekyll-minifier
   jekyll-sitemap
   minima (~> 2.0)

@@ -49,12 +49,16 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" /> -->
+    <link rel="stylesheet" href="{{ 'assets/css/bulma.min.css' | prepend: site.baseurl }}">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <!-- <link rel="stylesheet" href="{{ 'assets/css/slick.min.css' | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ 'assets/css/slick-theme.css' | prepend: site.baseurl }}"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.5/venobox.min.css" type="text/css"
-        media="screen" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.5/venobox.min.css"  /> -->
+        <link rel="stylesheet" href="{{ 'assets/css/venobox.min.css' | prepend: site.baseurl }}" type="text/css"
+        media="screen">
     <link rel="stylesheet" href="{{ 'assets/css/main.css' | prepend: site.baseurl }}">
     
     <!-- <link rel="stylesheet" href="{{ "assets/css/bulma_pricing.css" | prepend: site.baseurl }}"> -->
@@ -66,12 +70,18 @@
     {{ content }}
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.1.5/lazysizes.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="{{ 'assets/js/jquery.min.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ 'assets/js/lazysizes.min.js' | prepend: site.baseurl }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.5/venobox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="{{ 'assets/js/lazysizes.min.js' | prepend: site.baseurl }}"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script> -->
+    <script src="{{ 'assets/js/slick.min.js' | prepend: site.baseurl }}"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.5/venobox.min.js"></script> -->
+    <script src="{{ 'assets/js/venobox.min.js' | prepend: site.baseurl }}"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script> -->
+    <script src="{{ 'assets/js/sweetalert.min.js' | prepend: site.baseurl }}"></script>
     <script src="{{ 'assets/js/main.js' | prepend: site.baseurl }}"></script>
 
 
