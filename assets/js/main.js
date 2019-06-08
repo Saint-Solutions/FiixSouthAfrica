@@ -2,9 +2,41 @@ console.log('DEVELOPED BY RONALD LANGEVELD')
 console.log('https://ronaldlangeveld.com')
 
 $(window).on('load', function () {
-	var url = window.location.pathname;
-	console.log(url);
-	$('.navbar-item[href="' + url + '"]').addClass('has-text-link');
+	// var url = window.location.pathname;
+	// console.log(url);
+	// // $('a[data-link *= "'+url+'"]').addClass('has-text-link');
+	// // var foundin = $('a[data-link]:contains("cmms")');
+	// 	var foundin = $('a[data-link]:contains("'+ url + '")');
+	// console.log(foundin);
+	// $(foundin).addClass('has-text-link');
+
+	$(".navbar-item").each(function(){
+		if ($(this).attr("href") == window.location.pathname){
+				$(this).addClass("has-text-link");
+		}
+});
+
+
+
+
+	// if ($('#field > div.field-item:contains("someText")').length > 0) {
+	// 	$("#somediv").addClass("thisClass");
+	// }
+
+	// $('.navbar-item[href*="' + url + '"]').addClass('has-text-link');
+	// $('a[data-link="' + window.location.hash.replace('#', '') + '"]').trigger('click');
+	// $('a[data-link*="'+ url +'"]').addClass('has-text-link');
+
+	// if (url.indexOf('a[data-link*="'+ url +'"]') > -1) {
+	//   console.log(this);
+	//   $(this).addClass('has-text-link');
+	// } else {
+	//   console.log(false);
+	// }
+
+
+
+
 });
 
 
