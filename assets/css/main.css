@@ -57,6 +57,14 @@ body {
 
 }
 
+
+@media screen and (max-width: 1088px){
+  .notification {
+height: 100%;
+
+  }
+  }
+
 .features_hover_content_container > div {
   height: 100px;
   background: url('../images/double_arrows_left.png') no-repeat right 51px;
