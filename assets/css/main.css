@@ -50,12 +50,10 @@ body {
   background-color: #ececec;
 }
 
-/* .notification {
+.notification {
   border-radius: 0px !important;
-  min-height: 18rem;
-  max-height: 25rem;
 
-} */
+}
 
 .note-desk {
 
