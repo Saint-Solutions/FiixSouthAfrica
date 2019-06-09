@@ -1,8 +1,14 @@
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   /* font-family: "Open Sans", Arial, Helvetica, sans-serif !important; */
   -webkit-font-smoothing: antialiased;
   
 }
+
+
 
 .features_hover_row .wpb_raw_html {
   max-width: 1600px;
