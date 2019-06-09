@@ -137,7 +137,7 @@ $(".enquireModal").click(function () {
 });
 
 $(function () {
-	var header = $(".navbar");
+	var header = $(".desktopNavBar");
 	var navLink = $(".toChange");
 	var navItem = $(".toChange");
 	var demoBTN = $(".demoBTN");
