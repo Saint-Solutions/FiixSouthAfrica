@@ -50,20 +50,29 @@ body {
   background-color: #ececec;
 }
 
-.notification {
+/* .notification {
   border-radius: 0px !important;
   min-height: 18rem;
   max-height: 25rem;
 
+} */
+
+.note-desk {
+
+    border-radius: 0px !important;
+    min-height: 18rem !important;
+    max-height: 25rem !important;
+  
+
 }
 
-
+/* 
 @media screen and (max-width: 1088px){
   .notification {
 height: 100%;
 
   }
-  }
+  } */
 
 .features_hover_content_container > div {
   height: 100px;
