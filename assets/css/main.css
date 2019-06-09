@@ -339,6 +339,14 @@ header.masthead {
   margin-right: 32px;
 }
 
+@media screen and (max-width: 1088px){
+  .sectionText {
+margin-top: 1px;
+
+  }
+  }
+  
+
 
 .responsiveBackground {
   height: 100%;
@@ -523,3 +531,4 @@ background: #0097dc;
 .bigImg {
   cursor: pointer;
 }
+
