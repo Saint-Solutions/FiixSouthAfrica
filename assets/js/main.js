@@ -3,28 +3,43 @@ console.log('https://ronaldlangeveld.com')
 
 $(window).on('load', function () {
 	var url = window.location.pathname;
-	var lastChar = url[url.length -1];
+	var lastChar = url[url.length - 1];
 
 	console.log(lastChar);
 
-	if(lastChar === '/'){
-		var newStr = url.slice(0,url.length-1);
+	if (lastChar === '/') {
+		var newStr = url.slice(0, url.length - 1);
 		console.log(true);
-		$(".navbar-item").each(function(){
-			if ($(this).attr("href") == newStr){
-					$(this).addClass("has-text-link");
+		$(".navbar-item").each(function () {
+			if ($(this).attr("href") == newStr) {
+				$(this).addClass("has-text-link");
 			}
-	});
+		});
 	} else {
-		$(".navbar-item").each(function(){
-			if ($(this).attr("href") == window.location.pathname){
-					$(this).addClass("has-text-link");
+		$(".navbar-item").each(function () {
+			if ($(this).attr("href") == window.location.pathname) {
+				$(this).addClass("has-text-link");
 			}
-	});
+		});
 	};
 });
 
 
+function getCookie(cname) {
+	var name = cname + "=";
+	var decodedCookie = decodeURIComponent(document.cookie);
+	var ca = decodedCookie.split(';');
+	for (var i = 0; i < ca.length; i++) {
+		var c = ca[i];
+		while (c.charAt(0) == ' ') {
+			c = c.substring(1);
+		}
+		if (c.indexOf(name) == 0) {
+			return c.substring(name.length, c.length);
+		}
+	}
+	return "";
+};
 
 $(document).ready(function () {
 	// Target your .container, .wrapper, .post, etc.
@@ -224,3 +239,87 @@ $('.industryDD').on('change', function () {
 	}, 2000);
 });
 
+
+
+
+$('#contactUsBtn').click(function () {
+	var btn = this;
+
+	var d = new Date();
+	var n = d.getTime();
+	var firstname = $('#firstname').val();
+	var lastname = $('#lastname').val();
+	var email = $('#email').val();
+	var phone = $('#phone').val();
+	var company = $('#company').val();
+	var teamsize = $("#teamsize option:selected").val();
+	var message = $("#message").val();
+
+	var url = 'https://api.hsforms.com/submissions/v3/integration/submit/5979242/4b40b8de-1146-44f7-ab1c-527b16b20688';
+	if (firstname.length && lastname.length && email.length && phone.length && company.length && teamsize.length && message.length > 0) {
+		$(btn).toggleClass('is-loading');
+		var data = {
+			"submittedAt": n,
+			"fields": [
+				{
+					"name": "email",
+					"value": email
+				},
+				{
+					"name": "firstname",
+					"value": firstname
+				},
+				{
+					"name": "lastname",
+					"value": lastname
+				},
+				{
+					"name": "phone",
+					"value": phone
+				},
+				{
+					"name": "maintenance_team_size",
+					"value": teamsize
+				},
+				{
+					"name": "message",
+					"value": message
+				},
+				{
+					"name": "company",
+					"value": company
+				},
+			],
+			"context": {
+				"hutk": getCookie("hubspotutk"),
+				"pageUri": window.location.href,
+				"pageName": "Contact Us Page"
+			},
+		};
+
+		console.log(data);
+		var context = JSON.stringify(data);
+		$.ajax({
+			type: "POST",
+			url: url,
+			data: context,
+			contentType: "application/json;",
+			dataType: "json",
+			success: function (data) {
+				$(btn).toggleClass('is-loading');
+				$(btn).attr("disabled", true);
+				swal("Success!", "Thank you! We will be in touch soon.", "success");
+			},
+			failure: function (errMsg) {
+				$(btn).toggleClass('is-loading');
+				alert('Oops, something is wrong. Please send us an email over at info@fiixsoftware.co.za')
+			}
+		});
+	} else {
+		swal("Oops!", "Please make sure everything is filled in.", "warning");
+	}
+
+});
+
+var hubcookie = getCookie("hubspotutk");
+console.log(hubcookie);

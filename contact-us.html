@@ -33,41 +33,40 @@ layout: default
                 <br>
               </div>
               <div class="message-body">
-                <form method="POST" action="https://formspree.io/hi@ronaldlangeveld.com">
                   <div class="field">
                     <label class="label">First name</label>
                     <div class="control">
-                      <input name="name" class="input" type="text" placeholder="John" required>
+                      <input id="firstname" name="firstname" class="input" type="text" placeholder="John" required>
                     </div>
                   </div>
                   <div class="field">
                     <label class="label">Last Name</label>
                     <div class="control">
-                      <input name="email" class="input" type="text" placeholder="Doe" required>
+                      <input id="lastname" name="lastname" class="input" type="text" placeholder="Doe" required>
                     </div>
                   </div>
                   <div class="field">
                     <label class="label">Email</label>
                     <div class="control">
-                      <input name="email" class="input" type="email" placeholder="john@domain.com" required>
+                      <input id="email" name="email" class="input" type="email" placeholder="john@domain.com" required>
                     </div>
                   </div>
                   <div class="field">
                     <label class="label">Phone number</label>
                     <div class="control">
-                      <input name="email" class="input" type="number" placeholder="+27123456789" required>
+                      <input id="phone" name="phone" class="input" type="number" placeholder="+27123456789" required>
                     </div>
                   </div>
                   <div class="field">
                     <label class="label">Company</label>
                     <div class="control">
-                      <input name="company" class="input" type="text" placeholder="John Doe Pty Ltd">
+                      <input id="company" name="company" class="input" type="text" placeholder="John Doe Pty Ltd">
                     </div>
                   </div>
                   <div class="field">
                     <label class="label">Maintenance team size</label>
                     <div class="select" style="width: 100%">
-                      <select style="width: 100%">
+                      <select id="teamsize" style="width: 100%">
                         <option value="">Select...</option>
                         <option value="1">1</option>
                         <option value="2-9">2-9</option>
@@ -82,11 +81,11 @@ layout: default
                   </div>
                   <div class="field">
                     <label class="label">Message</label>
-                    <textarea class="textarea" placeholder="Message"></textarea>
+                    <textarea id="message" name="message" class="textarea" placeholder="Message"></textarea>
                   </div>
 
-                  <button class="button is-size-6 is-success is-fullwidth" type="submit">Send to our team</button>
-                </form>
+                  <button id="contactUsBtn" class="button is-size-6 is-success is-fullwidth" type="submit">Send to our team</button>
+    
               </div>
             </article>
 
