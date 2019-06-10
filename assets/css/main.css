@@ -436,34 +436,27 @@ background: #0097dc;
   line-height: 78px;
 }
 
-
+.reallyBigText2 {
+  font-size: 55px;
+  line-height: 78px;
+}
 
 
 .floatIphone {
   right: 300px;
   top: 250px;
   position: absolute;
-  top: 18em;
-  right: 0;
-  width: 475px;
-  -moz-transition: all 1s ease-in-out, left 1.5s ease-in-out;
-  -webkit-transition: all 1s ease-in-out, left 1.5s ease-in-out;
-  -moz-transition: all 1s ease-in-out, left 1.5s ease-in-out;
-  -o-transition: all 1s ease-in-out, left 1.5s ease-in-out;
-  transition: all 1s ease-in-out, left 1.5s ease-in-out;
+  top: 17em;
+  right: 4em;
+  width: 19em;
 }
 
 .floatAndroid {
   /* right: -14em; */
   position: absolute;
-  top: -12em;
-  right: -17em;
-  width: 475px;
-  -moz-transition: all 1s ease-in-out, left 1.5s ease-in-out;
-  -webkit-transition: all 1s ease-in-out, left 1.5s ease-in-out;
-  -moz-transition: all 1s ease-in-out, left 1.5s ease-in-out;
-  -o-transition: all 1s ease-in-out, left 1.5s ease-in-out;
-  transition: all 1s ease-in-out, left 1.5s ease-in-out;
+  top: -3em;
+  right: -8em;
+  width: 20em;
 }
 
 .faqCardHeader {
@@ -553,3 +546,12 @@ background: #0097dc;
   cursor: pointer;
 }
 
+.iphone2 {
+  /* width: 300px;
+  right: 55%;
+  top: 475px;
+  transform: translate(38%, 0); */
+
+  width: 15em;
+  /* margin-top: 17em; */
+}
