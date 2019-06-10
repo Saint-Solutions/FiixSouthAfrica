@@ -370,7 +370,7 @@ $('#bookDemo1').click(function () {
 			"context": {
 				"hutk": getCookie("hubspotutk"),
 				"pageUri": window.location.href,
-				"pageName": "Contact Us Page"
+				"pageName": "Demo Page"
 			},
 		};
 
@@ -398,3 +398,263 @@ $('#bookDemo1').click(function () {
 
 });
 
+
+$('#freeTour').click(function () {
+	var btn = this;
+
+	var d = new Date();
+	var n = d.getTime();
+	var firstname = $('#firstNameTour').val();
+	var lastname = $('#lastNameTour').val();
+	var email = $('#companyEmail').val();
+	var phone = $('#phoneTour').val();
+	var company = $('#companyTour').val();
+	var teamsize = $("#teamTour option:selected").val();
+
+
+	var url = 'https://api.hsforms.com/submissions/v3/integration/submit/5979242/6f913052-920a-4479-9028-c4de6ec58905';
+	if (firstname.length && lastname.length && email.length && phone.length && company.length && teamsize.length > 0) {
+		$(btn).toggleClass('is-loading');
+		var data = {
+			"submittedAt": n,
+			"fields": [
+				{
+					"name": "email",
+					"value": email
+				},
+				{
+					"name": "firstname",
+					"value": firstname
+				},
+				{
+					"name": "lastname",
+					"value": lastname
+				},
+				{
+					"name": "phone",
+					"value": phone
+				},
+				{
+					"name": "maintenance_team_size",
+					"value": teamsize
+				},
+
+				{
+					"name": "company",
+					"value": company
+				},
+			],
+			"context": {
+				"hutk": getCookie("hubspotutk"),
+				"pageUri": window.location.href,
+				"pageName": "Demo Page"
+			},
+		};
+
+		console.log(data);
+		var context = JSON.stringify(data);
+		$.ajax({
+			type: "POST",
+			url: url,
+			data: context,
+			contentType: "application/json;",
+			dataType: "json",
+			success: function (data) {
+				$(btn).toggleClass('is-loading');
+				$(btn).attr("disabled", true);
+				window.location.href = "/thank-you";
+			},
+			failure: function (errMsg) {
+				$(btn).toggleClass('is-loading');
+				alert('Oops, something is wrong. Please send us an email over at info@fiixsoftware.co.za and we will fix it.')
+			}
+		});
+	} else {
+		swal("Oops!", "Please make sure everything is filled in.", "warning");
+	}
+
+});
+
+
+
+$('#newsLetterSignUpDesktop').click(function () {
+	var btn = this;
+
+	var d = new Date();
+	var n = d.getTime();
+
+	var email = $('#newsLetterInputDesktop').val();
+
+	var url = 'https://api.hsforms.com/submissions/v3/integration/submit/5979242/6ba3ff44-9ac0-4930-a684-0ae4fb67d33e';
+	if (email.length > 0) {
+		$(btn).toggleClass('is-loading');
+		var data = {
+			"submittedAt": n,
+			"fields": [
+				{
+					"name": "email",
+					"value": email
+				}
+			],
+			"context": {
+				"hutk": getCookie("hubspotutk"),
+				"pageUri": window.location.href
+			},
+		};
+
+		console.log(data);
+		var context = JSON.stringify(data);
+		$.ajax({
+			type: "POST",
+			url: url,
+			data: context,
+			contentType: "application/json;",
+			dataType: "json",
+			success: function (data) {
+				$(btn).toggleClass('is-loading');
+				$(btn).attr("disabled", true);
+				window.location.href = "/thank-you";
+			},
+			failure: function (errMsg) {
+				$(btn).toggleClass('is-loading');
+				alert('Oops, something is wrong. Please send us an email over at info@fiixsoftware.co.za and we will fix it.')
+			}
+		});
+	} else {
+		swal("Oops!", "Please make sure everything is filled in.", "warning");
+	}
+
+});
+
+$('#newsLetterSignUpMobile').click(function () {
+	var btn = this;
+
+	var d = new Date();
+	var n = d.getTime();
+
+	var email = $('#newsLetterInputMobile').val();
+
+	var url = 'https://api.hsforms.com/submissions/v3/integration/submit/5979242/6ba3ff44-9ac0-4930-a684-0ae4fb67d33e';
+	if (email.length > 0) {
+		$(btn).toggleClass('is-loading');
+		var data = {
+			"submittedAt": n,
+			"fields": [
+				{
+					"name": "email",
+					"value": email
+				}
+			],
+			"context": {
+				"hutk": getCookie("hubspotutk"),
+				"pageUri": window.location.href
+			},
+		};
+
+		console.log(data);
+		var context = JSON.stringify(data);
+		$.ajax({
+			type: "POST",
+			url: url,
+			data: context,
+			contentType: "application/json;",
+			dataType: "json",
+			success: function (data) {
+				$(btn).toggleClass('is-loading');
+				$(btn).attr("disabled", true);
+				window.location.href = "/thank-you";
+			},
+			failure: function (errMsg) {
+				$(btn).toggleClass('is-loading');
+				alert('Oops, something is wrong. Please send us an email over at info@fiixsoftware.co.za and we will fix it.')
+			}
+		});
+	} else {
+		swal("Oops!", "Please make sure everything is filled in.", "warning");
+	}
+
+});
+
+
+
+
+
+$('#pricingContactBTN').click(function () {
+	var btn = this;
+
+	var d = new Date();
+	var n = d.getTime();
+	var firstname = $('#firstname').val();
+	var lastname = $('#lastname').val();
+	var email = $('#email').val();
+	var phone = $('#phone').val();
+	var company = $('#company').val();
+	var plan = $("#plan option:selected").val();
+	var teamsize = $("#teamsize option:selected").val();
+
+
+	var url = 'https://api.hsforms.com/submissions/v3/integration/submit/5979242/e77459ad-e7a5-415a-b880-c95e066eadba';
+	if (firstname.length && lastname.length && email.length && phone.length && company.length && teamsize.length > 0) {
+		$(btn).toggleClass('is-loading');
+		var data = {
+			"submittedAt": n,
+			"fields": [
+				{
+					"name": "email",
+					"value": email
+				},
+				{
+					"name": "firstname",
+					"value": firstname
+				},
+				{
+					"name": "lastname",
+					"value": lastname
+				},
+				{
+					"name": "phone",
+					"value": phone
+				},
+				{
+					"name": "maintenance_team_size",
+					"value": teamsize
+				},
+				{
+					"name": "pricing_plan",
+					"value": plan
+				},
+				{
+					"name": "company",
+					"value": company
+				},
+			],
+			"context": {
+				"hutk": getCookie("hubspotutk"),
+				"pageUri": window.location.href,
+				"pageName": "Pricing Page"
+			},
+		};
+
+		console.log(data);
+		var context = JSON.stringify(data);
+		$.ajax({
+			type: "POST",
+			url: url,
+			data: context,
+			contentType: "application/json;",
+			dataType: "json",
+			success: function (data) {
+				$(btn).toggleClass('is-loading');
+				$(btn).attr("disabled", true);
+				window.location.href = "/thank-you";
+			},
+			failure: function (errMsg) {
+				$(btn).toggleClass('is-loading');
+				alert('Oops, something is wrong. Please send us an email over at info@fiixsoftware.co.za and we will fix it.')
+			}
+		});
+	} else {
+		swal("Oops!", "Please make sure everything is filled in.", "warning");
+	}
+
+});
