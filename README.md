@@ -1,3 +1,5 @@
+[![pipeline status](https://gitlab.com/ronaldlangeveld/fiix-south-africa/badges/master/pipeline.svg)](https://gitlab.com/ronaldlangeveld/fiix-south-africa/commits/master)
+
 FIIX Software South Africa
 
 Built in Jekyll and Hosted on Netlify
