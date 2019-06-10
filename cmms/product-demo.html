@@ -2,231 +2,199 @@
 layout: default
 ---
 
-<section class="hero is-info is-medium" style="background: #0097dc;
+<section class="hero is-info is-medium"
+    style="background: #0097dc;
 background: -moz-linear-gradient(left, #1e68bc 0%, #3498db 100%);
 background: -webkit-linear-gradient(left, #1e68bc 0%, #3498db 100%);
 background: linear-gradient(to right, #1e68bc 0%, #3498db 100%); background: -webkit-linear-gradient(top, #1e68bc 4%, #3498db 100%); background: -webkit-linear-gradient(left, #1e68bc 4%, #3498db 100%);">
 
-<div style="background: url({{ 'assets/images/landing_pattern.png' | prepend: site.baseurl }})">
-    <div class="hero-body">
-        <div class="container">
-            <div class="columns is-centered">
+    <div style="background: url({{ 'assets/images/landing_pattern.png' | prepend: site.baseurl }})">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered">
                     <div style="margin-top: 80px;" class="is-hidden-desktop"></div>
-                <div class="column is-6">
-                    <h1 class="title is-1">Get Fiix</h1>
-                    <h1 class="title is-1">Get Organized</h1>
-                    <br>
-                    <p class="is-size-4 has-text-weight-light">Fiix is maintenance management software that organizes, tracks, and
-                        schedules your maintenance activities</p>
+                    <div class="column is-6">
+                        <h1 class="title is-1">Get Fiix</h1>
+                        <h1 class="title is-1">Get Organized</h1>
                         <br>
-                    <p class="is-size-4 has-text-weight-bold" <strong>Faster. Better. For less.</strong></p>
-                    <br>
-                    <div class="content has-text-weight-light is-justified">
-                        <li> Get a walk-through of the Fiix maintenance management platform.
-                        </li>
-                        <li> View the reporting insights that Fiix can give your business.</li>
-                        <li> Built for mobile devices, easy to use, and fits any size budget.</li>
-
+                        <p class="is-size-4 has-text-weight-light">Fiix is maintenance management software that
+                            organizes, tracks, and
+                            schedules your maintenance activities</p>
                         <br>
+                        <p class="is-size-4 has-text-weight-bold" <strong>Faster. Better. For less.</strong></p>
+                        <br>
+                        <div class="content has-text-weight-light is-justified">
+                            <li> Get a walk-through of the Fiix maintenance management platform.
+                            </li>
+                            <li> View the reporting insights that Fiix can give your business.</li>
+                            <li> Built for mobile devices, easy to use, and fits any size budget.</li>
 
-             
+                            <br>
+
+
+                        </div>
+
                     </div>
-                  
-                </div>
-                <div class="column is-6">
-                    <div class="has-text-left">
+                    <div class="column is-6">
+                        <div class="has-text-left">
 
 
                             <article class="message">
                                 <div class="message-header has-text-centered">
                                     <br>
-                                  <p class="is-size-4 has-text-weight-light">Yes, I would like a live screenshare demo of Fiix.</p>
-                                  <br>
+                                    <p class="is-size-4 has-text-weight-light">Yes, I would like a live screenshare demo
+                                        of Fiix.</p>
+                                    <br>
                                 </div>
                                 <div class="message-body">
-                                        <form method="POST" action="https://formspree.io/hi@ronaldlangeveld.com">
-                                            <div class="field">
-                                                    <label class="label">Name</label>
-                                                    <div class="control">
-                                                      <input name="name" class="input" type="text" placeholder="John Doe" required>
-                                                    </div>
-                                                  </div>
-                                                  <div class="field">
-                                                    <label class="label">Email</label>
-                                                    <div class="control">
-                                                      <input name="email" class="input" type="email" placeholder="john@domain.com" required>
-                                                    </div>
-                                                  </div>
-                                                  <div class="field">
-                                                    <label class="label">Phone number</label>
-                                                    <div class="control">
-                                                      <input name="email" class="input" type="number" placeholder="+27123456789" required>
-                                                    </div>
-                                                  </div>
-                                                  <div class="field">
-                                                    <label class="label">Company name</label>
-                                                    <div class="control">
-                                                      <input name="company" class="input" type="text" placeholder="John Doe Pty Ltd">
-                                                    </div>
-                                                  </div>
-                                                  <div class="field">
-                                                    <label class="label">I would like to</label>
-                                                    <div class="select">
-                                                        <select name="type">
-                                                          <option>Schedule a demo</option>
-                                                          <option>Get a tour of Fiix</option>
-                                                          <option>Get to know more about your free eBooks</option>
-                                                        </select>
-                                                      </div>
-                                                  </div>
-                
-                                            <button class="button is-size-6 is-success is-fullwidth" type="submit">Submit enquiry</button>
-                                          </form>
+
+                                        <div class="field">
+                                            <label class="label">First Name</label>
+                                            <div class="control">
+                                                <input id="firstname" name="firstname" class="input" type="text" placeholder="John"
+                                                    required>
+                                            </div>
+                                        </div>
+
+                                        <div class="field">
+                                                <label class="label">Last Name</label>
+                                                <div class="control">
+                                                    <input id="lastname" name="lastname" class="input" type="text" placeholder="Doe"
+                                                        required>
+                                                </div>
+                                            </div>
+                                        <div class="field">
+                                            <label class="label">Email</label>
+                                            <div class="control">
+                                                <input id="email" name="email" class="input" type="email"
+                                                    placeholder="john@domain.com" required>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">Phone number</label>
+                                            <div class="control">
+                                                <input id="phone" name="phonenumber" class="input" type="number"
+                                                    placeholder="+27123456789" required>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">Company name</label>
+                                            <div class="control">
+                                                <input id="company" name="company" class="input" type="text"
+                                                    placeholder="John Doe Pty Ltd">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                                <label class="label">Maintenance team size</label>
+                                                <div class="select" style="width: 100%">
+                                                  <select id="teamsize" style="width: 100%">
+                                                    <option value="">Select...</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2-9">2-9</option>
+                                                    <option value="10-19">10-19</option>
+                                                    <option value="20-49">20-49</option>
+                                                    <option value="50-99">50-99</option>
+                                                    <option value="100-199">100-199</option>
+                                                    <option value="200+">200+</option>
+                            
+                                                  </select>
+                                                </div>
+                                              </div>
+
+                                        <button id="bookDemo1" class="button is-size-6 is-success is-fullwidth" type="submit">Submit
+                                            enquiry</button>
+                        
                                 </div>
-                              </article>
-                                                      
-                    
-                </div>
-                </div>
-                </div>
+                            </article>
 
-            </div>
-            <!-- <div class="columns is-centered">
 
-                    <div class="column is-8">
-    
-                        <div class="columns is-multiline is-centered">
-    
-    
-                            <div class="column is-3">
-                                <img class="lazyload" data-src="{{ 'assets/images/molson-coors.png' | prepend: site.baseurl }}"
-                                    alt="Molson-Coors">
-                            </div>
-    
-                            <div class="column is-3">
-                                <img class="lazyload" data-src="{{ 'assets/images/magna.png' | prepend: site.baseurl }}" alt="Magna">
-                            </div>
-                            <div class="column is-3">
-                                <img class="lazyload" data-src="{{ 'assets/images/virgin.png' | prepend: site.baseurl }}" alt="Virgin">
-                            </div>
-                            <div class="column is-3">
-                                <img class="lazyload" data-src="{{ 'assets/images/kraft-heinz.png' | prepend: site.baseurl }}" alt="Kraft">
-                            </div>
-                            <div class="column is-3">
-                                <img class="lazyload" data-src="{{ 'assets/images/seaspan.png' | prepend: site.baseurl }}" alt="Seaspan">
-                            </div>
-                            <div class="column is-3">
-                                <img class="lazyload" data-src="{{ 'assets/images/KFC.png' | prepend: site.baseurl }}" alt="KFC">
-                            </div>
-                            <div class="column is-3">
-                                <img class="lazyload" data-src="{{ 'assets/images/temper_sealy.png' | prepend: site.baseurl }}" alt="Temper">
-                            </div>
-                            <div class="column is-3">
-                                <img class="lazyload" data-src="{{ 'assets/images/toyota_logo.png' | prepend: site.baseurl }}" alt="Toyota">
-                            </div>
-                            <div class="column is-3">
-                                <img class="lazyload" data-src="{{ 'assets/images/old-castle.png' | prepend: site.baseurl }}" alt="Old Castle">
-                            </div>
-                            <div class="column is-3">
-                                <img class="lazyload" data-src="{{ 'assets/images/alstom.png' | prepend: site.baseurl }}" alt="Alstom">
-                            </div>
-                            <div class="column is-3">
-                                <img class="lazyload" data-src="{{ 'assets/images/365-data-center.png' | prepend: site.baseurl }}"
-                                    alt="365 Data Center">
-                            </div>
-                            <div class="column is-3">
-                                <img class="lazyload" data-src="{{ 'assets/images/american-standard.png' | prepend: site.baseurl }}"
-                                    alt="American Standard">
-                            </div>
-                            <div class="column is-3">
-                                <img class="lazyload" data-src="{{ 'assets/images/Siemens.png' | prepend: site.baseurl }}" alt="Siemens">
-                            </div>
-                            <div class="column is-3">
-                                <img class="lazyload" data-src="{{ 'assets/images/colorado-rockies.png' | prepend: site.baseurl }}"
-                                    alt="colorado-rockies">
-                            </div>
                         </div>
-    
                     </div>
-    
-                </div> -->
-
-            <div>
+                </div>
 
             </div>
-</div>
+
         </div>
+    </div>
 
 </section>
 
 <section class="hero">
-        <div class="hero-body">
-          <div class="container">
-                <div class="responsiveBackground extraPadding" style="background-image: url({{ 'assets/images/background_form.jpg' | prepend: site.baseurl }}) ">
+    <div class="hero-body">
+        <div class="container">
+            <div class="responsiveBackground extraPadding"
+                style="background-image: url({{ 'assets/images/background_form.jpg' | prepend: site.baseurl }}) ">
 
 
 
-                    <div class="columns is-centered">
+                <div class="columns is-centered">
 
-                            <div class="column is-8">
-                            
-                                <div>
-            
-            
-                                <h1 class="subtitle is-3 has-text-centered">Not ready for a guided demo? Just looking to kick the tires a bit? Go ahead. Take Fiix for a spin.</h1>
-            
-            
-            
-            
-                                </div>
+                    <div class="column is-8">
 
-                                <br>
-                                <br>
+                        <div>
 
-                                <div style="margin-top: 2em;" class="columns is-multiline">
-                                        <div class="column is-6">
-                                            <input type="text" placeholder="First Name" class="input">
-                                        </div>
-                                        <div class="column is-6">
-                                                <input type="text" placeholder="Last Name" class="input">
-                                            </div>
-                                            <div class="column is-6">
-                                                    <input type="text" placeholder="Company Email" class="input">
-                                                </div>
-                                                <div class="column is-6">
-                                                        <input type="text" placeholder="Phone Number" class="input">
-                                                    </div>
-                                                    <div class="column is-12">
-                                                            <input type="text" placeholder="Company" class="input">
-                                                        </div>
-                                                        <div class="column is-12">
-                                                                <div class="select" style="width: 100%">
-                                                                        <select style="width: 100%">
-                                                                                <option value="">How many people are there on your maintenance team?</option><option value="1">1</option><option value="2-9">2-9</option><option value="10-19">10-19</option><option value="20-49">20-49</option><option value="50-99">50-99</option><option value="100-199">100-199</option><option value="200+">200+</option>
-                                                                        </select>
-                                                                      </div>
-                                                            </div>
-                                                            
-                                                         
-                                                            <div style="margin-top: 2em;" class="column is-12">
-                                                                    <button class="button is-success is-fullwidth borderShadow is-size-4 is-size-6-mobile">Get started with a free tour</button>
-                                                            </div>
-                                      </div>
-            
-            
-                            </div>
-            
-            
+
+                            <h1 class="subtitle is-3 has-text-centered">Not ready for a guided demo? Just looking to
+                                kick the tires a bit? Go ahead. Take Fiix for a spin.</h1>
+
                         </div>
+
+                        <br>
+                        <br>
+
+                        <div style="margin-top: 2em;" class="columns is-multiline">
+                            <div class="column is-6">
+                                <input type="text" placeholder="First Name" class="input">
+                            </div>
+                            <div class="column is-6">
+                                <input type="text" placeholder="Last Name" class="input">
+                            </div>
+                            <div class="column is-6">
+                                <input type="text" placeholder="Company Email" class="input">
+                            </div>
+                            <div class="column is-6">
+                                <input type="text" placeholder="Phone Number" class="input">
+                            </div>
+                            <div class="column is-12">
+                                <input type="text" placeholder="Company" class="input">
+                            </div>
+                            <div class="column is-12">
+                                <div class="select" style="width: 100%">
+                                    <select style="width: 100%">
+                                        <option value="">How many people are there on your maintenance team?</option>
+                                        <option value="1">1</option>
+                                        <option value="2-9">2-9</option>
+                                        <option value="10-19">10-19</option>
+                                        <option value="20-49">20-49</option>
+                                        <option value="50-99">50-99</option>
+                                        <option value="100-199">100-199</option>
+                                        <option value="200+">200+</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div style="margin-top: 2em;" class="column is-12">
+                                <button
+                                    class="button is-success is-fullwidth borderShadow is-size-4 is-size-6-mobile">Get
+                                    started with a free tour</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
 
 
 
 
 
             </div>
-          
-          </div>
+
         </div>
-      </section>
+    </div>
+</section>
 
 {% include footer.html %}

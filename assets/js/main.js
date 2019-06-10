@@ -308,11 +308,11 @@ $('#contactUsBtn').click(function () {
 			success: function (data) {
 				$(btn).toggleClass('is-loading');
 				$(btn).attr("disabled", true);
-				swal("Success!", "Thank you! We will be in touch soon.", "success");
+				window.location.href = "/thank-you";
 			},
 			failure: function (errMsg) {
 				$(btn).toggleClass('is-loading');
-				alert('Oops, something is wrong. Please send us an email over at info@fiixsoftware.co.za')
+				alert('Oops, something is wrong. Please send us an email over at info@fiixsoftware.co.za and we will fix it.')
 			}
 		});
 	} else {
@@ -321,5 +321,80 @@ $('#contactUsBtn').click(function () {
 
 });
 
-var hubcookie = getCookie("hubspotutk");
-console.log(hubcookie);
+
+$('#bookDemo1').click(function () {
+	var btn = this;
+
+	var d = new Date();
+	var n = d.getTime();
+	var firstname = $('#firstname').val();
+	var lastname = $('#lastname').val();
+	var email = $('#email').val();
+	var phone = $('#phone').val();
+	var company = $('#company').val();
+	var teamsize = $("#teamsize option:selected").val();
+
+
+	var url = 'https://api.hsforms.com/submissions/v3/integration/submit/5979242/b7c03c82-675f-4209-b45a-67e5a097f6e5';
+	if (firstname.length && lastname.length && email.length && phone.length && company.length && teamsize.length > 0) {
+		$(btn).toggleClass('is-loading');
+		var data = {
+			"submittedAt": n,
+			"fields": [
+				{
+					"name": "email",
+					"value": email
+				},
+				{
+					"name": "firstname",
+					"value": firstname
+				},
+				{
+					"name": "lastname",
+					"value": lastname
+				},
+				{
+					"name": "phone",
+					"value": phone
+				},
+				{
+					"name": "maintenance_team_size",
+					"value": teamsize
+				},
+
+				{
+					"name": "company",
+					"value": company
+				},
+			],
+			"context": {
+				"hutk": getCookie("hubspotutk"),
+				"pageUri": window.location.href,
+				"pageName": "Contact Us Page"
+			},
+		};
+
+		console.log(data);
+		var context = JSON.stringify(data);
+		$.ajax({
+			type: "POST",
+			url: url,
+			data: context,
+			contentType: "application/json;",
+			dataType: "json",
+			success: function (data) {
+				$(btn).toggleClass('is-loading');
+				$(btn).attr("disabled", true);
+				window.location.href = "/thank-you";
+			},
+			failure: function (errMsg) {
+				$(btn).toggleClass('is-loading');
+				alert('Oops, something is wrong. Please send us an email over at info@fiixsoftware.co.za and we will fix it.')
+			}
+		});
+	} else {
+		swal("Oops!", "Please make sure everything is filled in.", "warning");
+	}
+
+});
+
