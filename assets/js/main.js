@@ -576,12 +576,8 @@ $('#newsLetterSignUpMobile').click(function () {
 });
 
 
-
-
-
 $('#pricingContactBTN').click(function () {
 	var btn = this;
-
 	var d = new Date();
 	var n = d.getTime();
 	var firstname = $('#firstname').val();
@@ -591,8 +587,6 @@ $('#pricingContactBTN').click(function () {
 	var company = $('#company').val();
 	var plan = $("#plan option:selected").val();
 	var teamsize = $("#teamsize option:selected").val();
-
-
 	var url = 'https://api.hsforms.com/submissions/v3/integration/submit/5979242/e77459ad-e7a5-415a-b880-c95e066eadba';
 	if (firstname.length && lastname.length && email.length && phone.length && company.length && teamsize.length > 0) {
 		$(btn).toggleClass('is-loading');
