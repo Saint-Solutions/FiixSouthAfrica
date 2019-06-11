@@ -1,0 +1,15 @@
+User-agent: *
+
+User-agent: NinjaBot
+Allow: /
+
+User-agent: Mediapartners-Google*
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Adsbot-Google
+Allow: /
+
+Sitemap: https://www.fiixsoftware.co.za/sitemap.xml
