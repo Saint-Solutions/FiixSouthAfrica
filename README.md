@@ -1,93 +1,23 @@
-[![pipeline status](https://gitlab.com/ronaldlangeveld/fiix-south-africa/badges/master/pipeline.svg)](https://gitlab.com/ronaldlangeveld/fiix-south-africa/commits/master)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/219770cb-e0ad-4ef2-9556-eaf83837641a/deploy-status)](https://app.netlify.com/sites/eager-pike-5cf3e9/deploys)
 
 FIIX Software South Africa
-
 Built in Jekyll and Hosted on Netlify
+100% Static and focussed on Performance & SEO.
 
-100% Static and focussed on performance for SEO.
+How to run development server (on Mac🍎 and Linux 🐧):
 
+1.  Install a full  [Ruby development environment](https://jekyllrb.com/docs/installation/)
+2. Install Jekyll and [bundler](https://jekyllrb.com/docs/ruby-101/#bundler)  [gems](https://jekyllrb.com/docs/ruby-101/#gems) | `gem install jekyll bundler`
+3. `cd /fiixsouthafrica` 
+4. Build the site and make it available on a local server `bundle exec jekyll serve`
+5. Now browse to  [http://localhost:4000](http://localhost:4000/)
 
+For Window: [https://jekyllrb.com/docs/installation/windows/](https://jekyllrb.com/docs/installation/windows/)
 
-Landing Page, ✅
-
-Products: sub [
-
-CMMS  ✅
-
-Features  ✅
-
-Mobile CMMS  ✅,
-
-Cloud & SaaS CMMS  ✅,
-
-Demo ✅
-
-]
+To build the website:
+ `bundle exec jekyll build`
+ It will be stored in the folder `_site`
 
 
-Pricing Page  ✅,
-
-Solutions: sub[
-
-Industry Solutions: sub [
-
-    amusementpark ✅,
-
-    church ✅,
-
-    city ✅, 
-
-    data centre ✅,
-
-    factory ✅,
-
-    farm ✅,
-
-    fleet ✅,
-
-    food ✅,
-
-    gym ✅,
-
-    hospital ✅,
-
-    industrial ✅,
-
-    lab ✅,
-
-    mine ✅,
-
-    power ✅,
-
-    public utils ✅,
-
-    regulatory compli ✅,
-
-    school maint ✅,
-
-    textile ✅,
-
-    transport ✅,
-
-    university ✅,
-
-    wastewater ✅
-
-]
-
-Integrations ✅
-
-],
-
-Company: sub[
-
-About Us ✅,
-
-Contact Us ✅ 
-
-]
-
-Changes to regular scope:
-
-Added industrial solutions sub pages in place of Ebook section. Reason: No access to original Ebooks + requires backend processing (beyond scope)
-
+Developer: https://ronaldlangeveld.com
