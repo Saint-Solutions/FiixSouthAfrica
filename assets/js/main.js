@@ -222,9 +222,13 @@ $(".exitModal").click(function () {
 $(".bigImg").click(function () {
 
 	console.log('clicked img')
-	var imglink = $(this).data("src");
+	var imglink = $(this).data("screenshot");
+	if (imglink.length > 0){
 	$(".imgModal").addClass('is-active');
 	$('.dynaImg').attr('src', imglink);
+	} else {
+		console.log('screenshot does not exist');
+	}
 
 });
 
