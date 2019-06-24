@@ -32,14 +32,18 @@
     <!-- HTML Meta Tags -->
     <!-- <title>Cloud-Based CMMS, Asset Maintenance Software & More | Fiix</title> -->
     <title>{{ page.title | default: "Fiix Software | Cloud-Based CMMS, Asset Maintenance Software & More | Fiix" }}</title>
-    <meta name="description"
-        content="{{site.description}}">
+    <meta name="description" {% if page.description %} content="{{page.description}}" {% else %}
+        content="{{site.description}}"
+        {% endif %}
+        >
     <meta name="keywords" content="Fiix Software, CMMS, Prevent maintenance, cmms software, planned maintenance, word order, maintenance, app, fiix, Africa, South Africa, Durban ">
 
     <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="Fiix Software | Cloud-Based CMMS, Asset Maintenance Software & More | South Africa">
     <meta itemprop="description"
-        content="{{site.description}}">
+    {% if page.description %} content="{{page.description}}" {% else %}
+    content="{{site.description}}"
+    {% endif %}>
     <meta itemprop="image" content="{{ 'assets/images/dashboard.jpg' | prepend: site.baseurl }}">
 
     <!-- Facebook Meta Tags -->
@@ -47,14 +51,18 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Fiix Software | Cloud-Based CMMS, Asset Maintenance Software & More | Fiix">
     <meta property="og:description"
-        content="{{site.description}}">
+    {% if page.description %} content="{{page.description}}" {% else %}
+    content="{{site.description}}"
+    {% endif %}>
     <meta property="og:image" content="{{ 'assets/images/dashboard.jpg' | prepend: site.baseurl }}">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Fiix Software | Cloud-Based CMMS, Asset Maintenance Software & More | Fiix">
     <meta name="twitter:description"
-        content="{{site.description}}">
+    {% if page.description %} content="{{page.description}}" {% else %}
+    content="{{site.description}}"
+    {% endif %}>
     <meta name="twitter:image" content="{{ 'assets/images/dashboard.jpg' | prepend: site.baseurl }}">
 
     <!-- Meta Tags Generated via http://heymeta.com -->
