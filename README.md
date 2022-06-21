@@ -18,6 +18,3 @@ For Window: [https://jekyllrb.com/docs/installation/windows/](https://jekyllrb.c
 To build the website:
  `bundle exec jekyll build`
  It will be stored in the folder `_site`
-
-
-Developer: https://ronaldlangeveld.com
